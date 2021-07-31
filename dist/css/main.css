@@ -3,47 +3,137 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  font-family: 'Shrikhand', 'sans-serif';
+  font-size: 30px;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: 'Shrikhand', 'sans-serif';
+  font-style: normal;
+  font-size: 19px;
 }
 
 body {
   height: 100vh;
   font-family: 'roboto', 'sans-serif';
   line-height: 1;
-}
-
-h1 {
-  font-family: 'Shrikhand';
-}
-
-h2, h3, h4 {
-  font-weight: 400;
+  text-align: center;
 }
 
 a {
-  color: #000;
+  color: #FFF;
   text-decoration: none;
 }
 
+/* HEADER */
 header {
-  position: fixed;
-  z-index: 2;
   width: 100%;
-  padding: 1rem;
+  padding-top: 1.5rem;
+  height: 63px;
 }
 
+/* MAIN */
 main {
   height: 100%;
   width: 100%;
 }
 
+/* POSITION VILLE */
+.city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EAEAEA;
+  border: 1px solid transparent;
+  color: #626262;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  height: 50px;
+}
+
+.city .fa-map-marker-alt {
+  padding-right: 9px;
+}
+
+/* EXPLORER RESTAURANTS */
+.restaurants-exploration {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 287px;
+  padding: 38px 5px;
+  width: 100%;
+}
+
+h2 {
+  margin-left: 1.0px;
+  min-height: 54px;
+  text-align: center;
+  width: 234px;
+}
+
+/* FOOTER */
 footer {
-  font-size: 1rem;
-  position: fixed;
+  font-size: 0.938rem;
+  line-height: 1.7;
   bottom: 0.4rem;
-  right: 1rem;
-  text-align: right;
-  padding: 1rem;
+  left: 1rem;
+  text-align: left;
+  padding: 2rem;
   background-color: #353535;
   color: #fff;
+}
+
+footer h4 {
+  padding-bottom: 14px;
+}
+
+footer .fa-utensils {
+  font-size: 13px;
+  padding-right: 13px;
+}
+
+footer .fa-hands-helping {
+  font-size: 11px;
+  padding-right: 9px;
+}
+
+footer .propose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .partner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

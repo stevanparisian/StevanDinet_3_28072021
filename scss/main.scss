@@ -1,43 +1,118 @@
-@import 'config';
+@import './base/base';
+@import './base/typography';
+
+@import './utils/variables';
+@import './utils/mixins';
 
 body {
     height: 100vh;
     font-family: 'roboto', 'sans-serif';
     line-height: 1;
+    text-align: center;
 }
 
-h1 {
-    font-family: 'Shrikhand';
-}
 
-h2, h3, h4 {
-    font-weight: 400;
-}
+
 
 a {
-    color: #000;
+
+    color: #FFF;
     text-decoration: none;
 }
 
+/* HEADER */
+
 header {
-    position: fixed;
-    z-index: 2;
+    
     width: 100%;
-    padding: 1rem;
+    padding-top: 1.5rem;
+    height: 63px;
 }
 
+/* MAIN */
+
 main {
+
     height: 100%;
     width: 100%;
 }
 
+/* POSITION VILLE */
+
+.city {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    border: 1px solid transparent;
+    color: #626262;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    height: 50px;
+
+
+    .fa-map-marker-alt {
+       
+        padding-right: 9px;
+    }
+}
+
+/* EXPLORER RESTAURANTS */
+
+.restaurants-exploration {
+
+    align-items: center;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    height: 287px;
+    padding: 38px 5px;
+    width: 100%;
+}
+
+h2 {
+
+    margin-left: 1.0px;
+    min-height: 54px;
+    text-align: center;
+    width: 234px;
+}
+
+/* FOOTER */
+
 footer {
-    font-size: 1rem;
-    position: fixed;
+
+    font-size: 0.938rem;
+    line-height: 1.7;
     bottom: 0.4rem;
-    right: 1rem;
-    text-align: right;
-    padding: 1rem;
-    background-color: #353535;
+    left: 1rem;
+    text-align: left;
+    padding: 2rem;
+    background-color: $footer;
     color: #fff;
+
+    h4 {
+        padding-bottom: 14px;
+    }
+    
+    .fa-utensils {
+        font-size: 13px;
+        padding-right: 13px;
+    }
+
+    .fa-hands-helping {
+        font-size: 11px;
+        padding-right: 9px;
+    }
+    .propose {
+        display: flex;
+    }
+
+
+    .partner {
+        display: flex;
+    }
+
 }
