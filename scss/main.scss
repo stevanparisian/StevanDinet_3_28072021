@@ -9,6 +9,7 @@ body {
     font-family: 'roboto', 'sans-serif';
     line-height: 1;
     text-align: center;
+    min-width: 375px;
 }
 
 
@@ -31,7 +32,7 @@ header {
 
 main {
 
-    height: 100%;
+    height: 2004px;
     width: 100%;
 }
 
@@ -71,7 +72,6 @@ main {
 
         h2 {
 
-            margin-left: 1.0px;
             min-height: 54px;
             text-align: center;
             width: 234px;
@@ -79,7 +79,6 @@ main {
 
         p {
 
-            align-self: flex-end;
             margin-top: 12px;
             min-height: 44px;
             text-align: center;
@@ -112,6 +111,161 @@ main {
     box-shadow: 0px 7px 14px -7px rgba(0,0,0,0.73);
   }
 
+/* FONCTIONNEMENT */
+
+.functioning {
+ 
+    text-align: left;
+    background-color: $background-color;
+    height: 441px;
+    padding: 45px 12px;
+    width: 100%;
+
+    .btn-ensemble {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+    }
+
+    .btn-select {
+        display: flex;
+        font-weight: bold;
+        align-items: center;
+        height: 75px;
+        width: 340px;
+        background-color: #F6F6F6;
+        border-radius: 25px;
+        box-shadow: 0px 7px 14px -7px rgba(0,0,0,0.73);
+        border: none;
+        
+  
+    }
+
+        .number {
+            background-color: #9356DC;
+            color: #FFF;
+            font-size: 14px;
+            border-radius: 11.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 24px;
+            min-width: 24px;
+            padding: 3px 6px;
+
+        }
+
+            .fa-mobile-alt  {
+                align-items: flex-start;
+                display: flex;
+                margin-bottom: 1.0px;
+                margin-left: 26px;
+                padding: 0 3px;
+                width: 20px;
+            }
+
+            .fa-list {
+
+                align-items: flex-start;
+                display: flex;
+                margin-bottom: 1.0px;
+                margin-left: 26px;
+                padding: 0 3px;
+                width: 20px;
+
+            }
+
+            .fa-store {
+                align-items: flex-start;
+                display: flex;
+                margin-bottom: 1.0px;
+                margin-left: 26px;
+                padding: 0 3px;
+                width: 20px;
+            }
+
+                .text-description {
+                    letter-spacing: 0;
+                    margin-bottom: 1.0px;
+                    margin-left: 17px;
+                    margin: 0 20px 0 17px;
+                    min-height: 20px;
+                    min-width: 191px;
+                    font-size: 17px;
+                    font-weight: 600;
+                }   
+}
+
+
+/* RESTAURANTS */
+
+.restaurants {
+    background-color: #F6F6F6;
+    height: 1226px;
+    padding: 45px 12px;
+    width: 100%;
+    text-align: left;
+
+    h2 {
+
+        min-height: 54px;
+        width: 234px;
+    }
+
+    .restaurant-block {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1060px;
+
+    }
+}
+.restaurant-card {
+
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    img {
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        height: 175px;
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .nouveau {
+        cursor: default !important;
+        height: 30px !important;
+        width: 80px !important;
+        background-color: #99e2d0 !important;
+        color: #169475 !important;
+        position: absolute !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border-radius: 3px !important;
+        top: 13px !important;
+        right: 13px !important;
+        font-size: 0.95em !important;
+        font-weight: 600 !important;
+    
+}
+
+        .text-block {
+            height: 75px;
+            width: 100%;
+            background-color: #FFF;
+            border-radius: 0 0 20px 20px;
+        }
+}
 /* FOOTER */
 
 footer {
