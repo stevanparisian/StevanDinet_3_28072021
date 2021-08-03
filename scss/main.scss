@@ -23,8 +23,7 @@ header {
     width: 100%;
     padding-top: 1.5rem;
     height: 63px;
-    -webkit-box-shadow: 0px 7px 0px 1px #000000; 
-    box-shadow: 0px 7px 0px 1px #000000;
+    @include btn-shadow;
 }
 
 /* MAIN */
@@ -58,20 +57,20 @@ main {
 
 .restaurants-exp {
     align-items: center;
-    background-color: #F6F6F6;
+    background-color: $grey-color;
     display: flex;
     flex-direction: column;
     height: 287px;
     padding: 38px 5px;
     width: 100%;
 
-    .restaurant-exp__title {
+    .restaurants-exp__title {
         min-height: 54px;
         text-align: center;
         width: 234px;
     }
 
-    .restaurant-exp__text {
+    .restaurants-exp__text {
         margin-top: 12px;
         min-height: 44px;
         text-align: center;
@@ -93,14 +92,9 @@ main {
         color: #FFF;
         font-size: 14px;
         font-weight: 700;
-        background: #EE74DA;
-        background: -moz-linear-gradient(-45deg, #EE74DA 0%, #9F5ADC 100%);
-        background: -webkit-linear-gradient(-45deg, #EE74DA 0%, #9F5ADC 100%);
-        background: linear-gradient(135deg, #EE74DA 0%, #9F5ADC 100%);
-        -webkit-box-shadow: 0px 7px 14px -7px rgba(0,0,0,0.73); 
-        box-shadow: 0px 7px 10px -7px rgba(0,0,0,0.70);
+        background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
+        @include btn-shadow;
     }
-
 }
 
 /* FONCTIONNEMENT */
@@ -127,14 +121,14 @@ main {
         align-items: center;
         height: 75px;
         width: 330px;
-        background-color: #F6F6F6;
+        background-color: $grey-color;
         border-radius: 25px;
-        box-shadow: 0px 7px 14px -7px rgba(0,0,0,0.24);
+        @include btn-shadow;
         border: none;    
     }
 
     .functionong__number {
-        background-color: #9356DC;
+        background-color: $primary-color;
         color: #FFF;
         font-size: 14px;
         border-radius: 11.5px;
@@ -176,7 +170,7 @@ main {
 /* RESTAURANTS */
 
 .restaurants {
-    background-color: #F6F6F6;
+    background-color: $grey-color;
     height: 1226px;
     padding: 45px 12px;
     width: 100%;
@@ -200,7 +194,7 @@ main {
     height: 250px;
     border-radius: 12px;
     background-color: white;
-    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+    @include btn-shadow;
     cursor: pointer;
     }
 
@@ -217,7 +211,7 @@ main {
         cursor: default;
         height: 30px;
         width: 80px;
-        background-color: #99e2d0;
+        background-color: $tertiary-color;
         color: #169475;
         position: absolute;
         display: flex;
@@ -277,6 +271,7 @@ footer {
     padding: 2rem;
     background-color: $footer;
     color: #fff;
+    width: 100%;
 
     .footer__title {
         padding-bottom: 14px;
