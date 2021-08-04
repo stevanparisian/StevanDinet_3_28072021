@@ -19,21 +19,34 @@ a {
 
 /* HEADER */
 
-header {  
+.header {  
+    position: relative;
     width: 100%;
     padding-top: 1.5rem;
     height: 63px;
-    @include btn-shadow;
+    box-shadow: $box-shadow;
+
+    .header__menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__icon {
+        position: absolute;
+        margin: 10px;
+        left: 15px;
+        font-size: 20px;
+    }
 }
 
-/* MAIN */
+/* MAIN ACCEUIL */
 
 main {
     height: 2004px;
     width: 100%;
 }
 
-/* POSITION VILLE */
+/* POSITION VILLE ACCEUIL */
 
 .town-position__city {
     display: flex;
@@ -53,10 +66,9 @@ main {
     }
 }
 
-/* EXPLORER RESTAURANTS */
+/* EXPLORER RESTAURANTS ACCEUIL */
 
 .restaurants-exp {
-    align-items: center;
     background-color: $grey-color;
     display: flex;
     flex-direction: column;
@@ -93,18 +105,22 @@ main {
         font-size: 14px;
         font-weight: 700;
         background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
-        @include btn-shadow;
+        box-shadow: $box-shadow;
     }
 }
 
-/* FONCTIONNEMENT */
+/* FONCTIONNEMENT ACCEUIL */
 
 .functioning {
     text-align: left;
-    background-color: $background-color;
+    background-color: #FFF;
     height: 441px;
     padding: 45px 12px;
     width: 100%;
+
+    .functioning__title {
+        margin-bottom: 15px;
+    }
 
     .functioning__block {
         display: flex;
@@ -123,11 +139,11 @@ main {
         width: 330px;
         background-color: $grey-color;
         border-radius: 25px;
-        @include btn-shadow;
+        box-shadow: $box-shadow;
         border: none;    
     }
 
-    .functionong__number {
+    .functioning__number {
         background-color: $primary-color;
         color: #FFF;
         font-size: 14px;
@@ -154,7 +170,7 @@ main {
         justify-content: center;
     }
 
-    .functionong__text {
+    .functioning__text {
         letter-spacing: 0;
         margin-bottom: 1.0px;
         margin-left: 17px;
@@ -167,7 +183,7 @@ main {
 }
 
 
-/* RESTAURANTS */
+/* RESTAURANTS ACCEUIL */
 
 .restaurants {
     background-color: $grey-color;
@@ -194,7 +210,7 @@ main {
     height: 250px;
     border-radius: 12px;
     background-color: white;
-    @include btn-shadow;
+    box-shadow: $box-shadow;
     cursor: pointer;
     }
 
@@ -259,6 +275,68 @@ main {
     }
         
 }
+
+/* MAIN MENU */
+
+.main__menu {
+    height: 1480px;
+    width: 100%;
+
+    .main__img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* MENU */
+
+.menu__box {
+    position: absolute;
+    top: 320px;
+    background-color: #EAEAEA;
+    height: auto;
+    width: auto;
+    max-width: 690px;
+    margin: 0 auto;
+    border-radius: 45px 45px 0 0;
+
+    .menu__title {
+        height: 80px;
+        width: 100%;
+        max-width: 690px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 25px 25px 0 0;
+        overflow: hidden;
+    }
+
+}
+
+.menu__details {
+    height: auto;
+    width: 100%;
+    max-width: 690px;
+    padding: 0 15px 20px 15px;
+
+
+    .menu__dish {
+        width: auto;
+        font-size: 1em;
+        font-weight: 400;
+        padding-bottom: 5px;
+    }
+
+    .menu__line {
+    background-color: #99e2d0;
+    height: 5px;
+    width: 40px;
+    }
+}
+
+
 
 /* FOOTER */
 

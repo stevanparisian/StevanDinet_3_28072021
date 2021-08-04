@@ -13,6 +13,13 @@ h2 {
     line-height: 1.2;
 }
 
+h3 {
+    font-family: 'Shrikhand', 'cursive';
+    font-style: normal;
+    font-size: 29px;
+    font-weight:400;
+}
+
 h4 {
     font-family: 'Shrikhand', 'cursive';
     font-style: normal;
@@ -21,6 +28,11 @@ h4 {
 }
 
 p {
+    font-size: 19px;
+    line-height: 1.3;
+}
+
+a {
     font-size: 19px;
     line-height: 1.3;
 }
