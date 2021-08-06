@@ -13,6 +13,13 @@
   height: 1539px;
 }
 
+.btn-gradiant {
+  background-size: 100% 100%;
+  border-radius: 25px;
+  border: none;
+  color: #FFF;
+}
+
 h1 {
   font-family: "Shrikhand", "cursive";
   font-size: 30px;
@@ -124,17 +131,10 @@ main {
   width: 362px;
 }
 .restaurants-exp .restaurants-exp__btn {
-  background-size: 100% 100%;
-  display: flex;
   height: 58px;
-  justify-content: center;
-  align-items: center;
   margin-top: 27px;
   min-width: 210px;
   padding: 17px 26px;
-  border-radius: 25px;
-  border: none;
-  color: #FFF;
   font-size: 14px;
   font-weight: 700;
   background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
@@ -377,14 +377,11 @@ main {
   height: 180px;
 }
 .order .order__btn {
-  background-size: 100% 100%;
   height: 58px;
+  background-size: 100% 100%;
   margin-top: 40px;
   min-width: 210px;
-  border-radius: 25px;
-  border: none;
-  color: #FFF;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
