@@ -12,11 +12,6 @@ body {
     min-width: 375px;
 }
 
-a {
-    color: #FFF;
-    text-decoration: none;
-}
-
 /* HEADER */
 
 .header {  
@@ -39,14 +34,14 @@ a {
     }
 }
 
-/* MAIN ACCEUIL */
+/* MAIN INDEX */
 
 main {
     height: 2004px;
     width: 100%;
 }
 
-/* POSITION VILLE ACCEUIL */
+/* POSITION VILLE INDEX */
 
 .town-position__city {
     display: flex;
@@ -66,7 +61,7 @@ main {
     }
 }
 
-/* EXPLORER RESTAURANTS ACCEUIL */
+/* EXPLORER RESTAURANTS INDEX */
 
 .restaurants-exp {
     background-color: $grey-color;
@@ -95,7 +90,6 @@ main {
         height: 58px;
         justify-content: center;
         align-items: center;
-        margin-left: 11.0px;
         margin-top: 27px;
         min-width: 210px;
         padding: 17px 26px;
@@ -109,7 +103,7 @@ main {
     }
 }
 
-/* FONCTIONNEMENT ACCEUIL */
+/* FONCTIONNEMENT INDEX */
 
 .functioning {
     text-align: left;
@@ -183,7 +177,7 @@ main {
 }
 
 
-/* RESTAURANTS ACCEUIL */
+/* RESTAURANTS INDEX */
 
 .restaurants {
     background-color: $grey-color;
@@ -263,7 +257,7 @@ main {
     }
 
     .restaurants__region {
-        font-weight:300;
+        font-weight:400;
         font-size: 17px;
     }
 
@@ -295,7 +289,7 @@ main {
     position: absolute;
     top: 320px;
     background-color: #EAEAEA;
-    height: auto;
+    height: 1223px;
     width: auto;
     max-width: 690px;
     margin: 0 auto;
@@ -311,6 +305,7 @@ main {
         align-items: center;
         border-radius: 25px 25px 0 0;
         overflow: hidden;
+        padding: 0 15px 0 15px;
     }
 
 }
@@ -319,7 +314,7 @@ main {
     height: auto;
     width: 100%;
     max-width: 690px;
-    padding: 0 15px 20px 15px;
+    padding: 15px 15px 20px 15px;
 
 
     .menu__dish {
@@ -327,13 +322,74 @@ main {
         font-size: 1em;
         font-weight: 400;
         padding-bottom: 5px;
+        text-align: left;
     }
 
     .menu__line {
     background-color: #99e2d0;
-    height: 5px;
+    height: 3px;
     width: 40px;
     }
+
+}
+
+.menu__btn {
+    background-size: 100% 100%;
+    height: 65px;
+    width: 100%;
+    min-width: 210px;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFF;
+    font-size: 14px;
+    box-shadow: $box-shadow;
+    margin-top: 15px;
+    padding: 0 15px 0 15px;
+
+    .menu__name {
+        text-align: left;
+        font-weight: 700;
+        font-size: 17px;
+    }
+
+    .position {
+        display: flex;
+        justify-content: space-between;
+
+        .menu__detail {
+            font-weight:400;
+            font-size: 15px;
+       
+        }
+
+        .menu__price {
+            font-weight: 700;
+            font-size: 17px;
+        
+        }
+    }
+}
+
+/* BOUTTON MENU */
+
+.order {
+
+    
+    .order__btn {
+        background-size: 100% 100%;
+        height: 58px;
+        margin-top: 27px;
+        min-width: 210px;
+        padding: 17px 26px;
+        border-radius: 25px;
+        border: none;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 700;
+        background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
+        box-shadow: $box-shadow;
+    }
+
 }
 
 
@@ -350,6 +406,7 @@ footer {
     background-color: $footer;
     color: #fff;
     width: 100%;
+    height: 200px;
 
     .footer__title {
         padding-bottom: 14px;

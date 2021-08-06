@@ -1,15 +1,12 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 h1 {
-  font-family: 'Shrikhand', 'cursive';
+  font-family: "Shrikhand", "cursive";
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -22,14 +19,14 @@ h2 {
 }
 
 h3 {
-  font-family: 'Shrikhand', 'cursive';
+  font-family: "Shrikhand", "cursive";
   font-style: normal;
   font-size: 29px;
   font-weight: 400;
 }
 
 h4 {
-  font-family: 'Shrikhand', 'cursive';
+  font-family: "Shrikhand", "cursive";
   font-style: normal;
   font-size: 19px;
   font-weight: 400;
@@ -43,19 +40,16 @@ p {
 a {
   font-size: 19px;
   line-height: 1.3;
+  color: #FFF;
+  text-decoration: none;
 }
 
 body {
   height: 100vh;
-  font-family: 'roboto', 'sans-serif';
+  font-family: "roboto", "sans-serif";
   line-height: 1;
   text-align: center;
   min-width: 375px;
-}
-
-a {
-  color: #FFF;
-  text-decoration: none;
 }
 
 /* HEADER */
@@ -64,19 +58,12 @@ a {
   width: 100%;
   padding-top: 1.5rem;
   height: 63px;
-  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
-          box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
 }
-
 .header .header__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .header .header__icon {
   position: absolute;
   margin: 10px;
@@ -84,23 +71,17 @@ a {
   font-size: 20px;
 }
 
-/* MAIN ACCEUIL */
+/* MAIN INDEX */
 main {
   height: 2004px;
   width: 100%;
 }
 
-/* POSITION VILLE ACCEUIL */
+/* POSITION VILLE INDEX */
 .town-position__city {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #EAEAEA;
   border: none;
   color: #626262;
@@ -109,52 +90,36 @@ main {
   width: 100%;
   height: 50px;
 }
-
 .town-position__city .town-position__icon {
   padding-right: 9px;
 }
 
-/* EXPLORER RESTAURANTS ACCEUIL */
+/* EXPLORER RESTAURANTS INDEX */
 .restaurants-exp {
   background-color: #F6F6F6;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 287px;
   padding: 38px 5px;
   width: 100%;
 }
-
 .restaurants-exp .restaurants-exp__title {
   min-height: 54px;
   text-align: center;
   width: 234px;
 }
-
 .restaurants-exp .restaurants-exp__text {
   margin-top: 12px;
   min-height: 44px;
   text-align: center;
   width: 362px;
 }
-
 .restaurants-exp .restaurants-exp__btn {
   background-size: 100% 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 58px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 11.0px;
+  justify-content: center;
+  align-items: center;
   margin-top: 27px;
   min-width: 210px;
   padding: 17px 26px;
@@ -164,11 +129,10 @@ main {
   font-size: 14px;
   font-weight: 700;
   background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
-  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
-          box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
 }
 
-/* FONCTIONNEMENT ACCEUIL */
+/* FONCTIONNEMENT INDEX */
 .functioning {
   text-align: left;
   background-color: #FFF;
@@ -176,84 +140,55 @@ main {
   padding: 45px 12px;
   width: 100%;
 }
-
 .functioning .functioning__title {
   margin-bottom: 15px;
 }
-
 .functioning .functioning__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
   height: 300px;
   padding-left: 32px;
   padding-right: 20px;
 }
-
 .functioning .functioning__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-weight: bold;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 75px;
   width: 330px;
   background-color: #F6F6F6;
   border-radius: 25px;
-  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
-          box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
   border: none;
 }
-
 .functioning .functioning__number {
   background-color: #9356DC;
   color: #FFF;
   font-size: 14px;
   border-radius: 11.5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 24px;
   min-width: 24px;
   padding: 3px 6px;
   left: 17px;
   position: absolute;
 }
-
 .functioning .functioning__icon {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: flex-start;
   display: flex;
-  margin-bottom: 1.0px;
+  margin-bottom: 1px;
   margin-left: 26px;
   padding: 0 3px;
   width: 20px;
   font-size: 16px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .functioning .functioning__text {
   letter-spacing: 0;
-  margin-bottom: 1.0px;
+  margin-bottom: 1px;
   margin-left: 17px;
   margin: 0 20px 0 17px;
   min-height: 20px;
@@ -262,7 +197,7 @@ main {
   font-weight: 700;
 }
 
-/* RESTAURANTS ACCEUIL */
+/* RESTAURANTS INDEX */
 .restaurants {
   background-color: #F6F6F6;
   height: 1226px;
@@ -270,48 +205,33 @@ main {
   width: 100%;
   text-align: left;
 }
-
 .restaurants .restaurants__title {
   min-height: 54px;
   width: 234px;
 }
-
 .restaurants .restaurants__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   height: 1060px;
 }
-
 .restaurants .restaurants__card {
   position: relative;
   width: 100%;
   height: 250px;
   border-radius: 12px;
   background-color: white;
-  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
-          box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
   cursor: pointer;
 }
-
 .restaurants img {
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0px -60px;
-     object-position: 0px -60px;
+  object-fit: cover;
+  object-position: 0px -60px;
   height: 175px;
   width: 100%;
   border-radius: 12px 12px 0 0;
 }
-
 .restaurants .restauarants__new {
   cursor: default;
   height: 30px;
@@ -319,29 +239,18 @@ main {
   background-color: #99E2D0;
   color: #169475;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 3px;
   top: 13px;
   right: 13px;
   font-size: 0.95em;
   font-weight: 600;
 }
-
 .restaurants .restaurants__description {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   height: 75px;
   width: 100%;
   background-color: #FFF;
@@ -351,30 +260,22 @@ main {
   height: 75px;
   width: 100%;
 }
-
 .restaurants .restaurants__text {
   width: 160px;
 }
-
 .restaurants .restaurants__name {
   font-weight: 700;
   font-size: 17px;
 }
-
 .restaurants .restaurants__region {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 17px;
 }
-
 .restaurants .restaurants__icon {
   width: 40px;
   font-size: 25px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /* MAIN MENU */
@@ -382,12 +283,10 @@ main {
   height: 1480px;
   width: 100%;
 }
-
 .main__menu .main__img {
   height: 300px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* MENU */
@@ -395,49 +294,89 @@ main {
   position: absolute;
   top: 320px;
   background-color: #EAEAEA;
-  height: auto;
+  height: 1223px;
   width: auto;
   max-width: 690px;
   margin: 0 auto;
   border-radius: 45px 45px 0 0;
 }
-
 .menu__box .menu__title {
   height: 80px;
   width: 100%;
   max-width: 690px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 25px 25px 0 0;
   overflow: hidden;
+  padding: 0 15px 0 15px;
 }
 
 .menu__details {
   height: auto;
   width: 100%;
   max-width: 690px;
-  padding: 0 15px 20px 15px;
+  padding: 15px 15px 20px 15px;
 }
-
 .menu__details .menu__dish {
   width: auto;
   font-size: 1em;
   font-weight: 400;
   padding-bottom: 5px;
+  text-align: left;
 }
-
 .menu__details .menu__line {
   background-color: #99e2d0;
-  height: 5px;
+  height: 3px;
   width: 40px;
+}
+
+.menu__btn {
+  background-size: 100% 100%;
+  height: 65px;
+  width: 100%;
+  min-width: 210px;
+  border-radius: 15px;
+  border: none;
+  background-color: #FFF;
+  font-size: 14px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
+  margin-top: 15px;
+  padding: 0 15px 0 15px;
+}
+.menu__btn .menu__name {
+  text-align: left;
+  font-weight: 700;
+  font-size: 17px;
+}
+.menu__btn .position {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__btn .position .menu__detail {
+  font-weight: 400;
+  font-size: 15px;
+}
+.menu__btn .position .menu__price {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+/* BOUTTON MENU */
+.order .order__btn {
+  background-size: 100% 100%;
+  height: 58px;
+  margin-top: 27px;
+  min-width: 210px;
+  padding: 17px 26px;
+  border-radius: 25px;
+  border: none;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
 }
 
 /* FOOTER */
@@ -451,31 +390,22 @@ footer {
   background-color: #353535;
   color: #fff;
   width: 100%;
+  height: 200px;
 }
-
 footer .footer__title {
   padding-bottom: 14px;
 }
-
 footer .footer__propose {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 footer .footer__partner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 footer .footer__icon1 {
   font-size: 13px;
   padding-right: 13px;
 }
-
 footer .footer__icon2 {
   font-size: 11px;
   padding-right: 9px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
