@@ -34,6 +34,8 @@ body {
     }
 }
 
+/* ---------PAGE INDEX----------- */
+
 /* MAIN INDEX */
 
 main {
@@ -270,10 +272,13 @@ main {
         
 }
 
+/* ------PAGE MENU------- */
+
+
+
 /* MAIN MENU */
 
 .main__menu {
-    height: 1480px;
     width: 100%;
 
     .main__img {
@@ -289,7 +294,7 @@ main {
     position: absolute;
     top: 320px;
     background-color: #EAEAEA;
-    height: 1223px;
+    height: auto;
     width: auto;
     max-width: 690px;
     margin: 0 auto;
@@ -305,16 +310,16 @@ main {
         align-items: center;
         border-radius: 25px 25px 0 0;
         overflow: hidden;
-        padding: 0 15px 0 15px;
+        padding: 20px 20px 0 20px;
     }
 
 }
 
 .menu__details {
-    height: auto;
+    height: 100%;
     width: 100%;
     max-width: 690px;
-    padding: 15px 15px 20px 15px;
+    padding: 30px 15px 20px 15px;
 
 
     .menu__dish {
@@ -371,16 +376,15 @@ main {
 }
 
 /* BOUTTON MENU */
-
 .order {
+    height: 180px;
 
-    
+
     .order__btn {
         background-size: 100% 100%;
         height: 58px;
-        margin-top: 27px;
+        margin-top: 40px;
         min-width: 210px;
-        padding: 17px 26px;
         border-radius: 25px;
         border: none;
         color: #FFF;
@@ -389,7 +393,6 @@ main {
         background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
         box-shadow: $box-shadow;
     }
-
 }
 
 

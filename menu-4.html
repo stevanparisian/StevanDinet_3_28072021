@@ -16,97 +16,122 @@
 
     <body>
 
-        <header>
-            <i class="fas fa-arrow-left"></i>
+        <header class="header">
+            <div class="header__menu">
+            <i class="fas fa-arrow-left header__icon"></i>
             <h1>ohmyfood</h1>
+            </div>
         </header>
 
-        <main>
+        <main class="main__menu nbdishes-9">
 
-            <!-- <img src="public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plats gastronomique"> -->
+            <img class="main__img" src="dist/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plats gastronomique">
 
-            <div class="restaurant-name">
-                <h2>Le délice des sens</h2>
-                <i class="far fa-heart"></i>
-            </div>
+            <section class="menu__box">
 
-            <div class="menu-card">
-                <div class="details-menu">
+                <div class="menu__title">
+                    <h3 class="menu__restaurant">Le délice des sens</h3>
+                    <i class="far fa-heart menu__icon"></i>
+                </div>
 
-                    <h3>ENTRÉES</h3>
+                    <div class="menu__details">
+                        <h5 class="menu__dish">ENTRÉES</h5>
+                        <div class="menu__line"></div>
 
-                    <button>
-                        <p>Tartare de thon</p>
-                        <p>Assaisonné au yuzu</p>
-                      <p>25€</p>
+                        <button class="menu__btn">
+                        <p class="menu__name">Tartare de thon</p>
+                            <div class="position">
+                                <p class="menu__detail">Assaisonné au yuzu</p>
+                                <p class="menu__price">25€</p>
+                            </div>
+
+                        </button>
+
+                        <button class="menu__btn">
+                        <p class="menu__name">Bouchée de homard croustillant</p>
+                            <div class="position">
+                                <p class="menu__detail">Et sa farandole de petits légumes</p>
+                                <p class="menu__price">35€</p>
+                            </div>
+                        </button>
+
+                        <button class="menu__btn">
+                        <p class="menu__name">Velouté de cèpes</p>
+                            <div class="position">
+                                <p class="menu__detail">Aux truffes</p>
+                                <p class="menu__price">20€</p>
+                            </div>
+                        </button>
+                
+                    </div>
+
+                <div class="menu__details">
+
+                    <h5 class="menu__dish">PLATS</h5>
+                    <div class="menu__line"></div>
+
+                    <button class="menu__btn">
+                        <p class="menu__name">Poulet rôti aux herbes de Provence</p>
+                            <div class="position">
+                                <p class="menu__detail">Et sa crème de truffe</p>
+                                <p class="menu__price">40€</p>
+                            </div>    
                     </button>
 
-                    <button>
-                        <p>Bouchée de homard croustillant</p>
-                        <p>Et sa farandole de petits légumes</p>
-                        <p>35€</p>
+                    <button class="menu__btn">
+                        <p class="menu__name">Langouste rôtie</p>
+                            <div class="position">
+                                <p class="menu__detail">Et ses légumes de saison</p>
+                                <p class="menu__price">35€</p>
+                            </div>
                     </button>
 
-                    <button>
-                        <p>Velouté de cèpes</p>
-                        <p>Aux truffes</p>
-                     <p>20€</p>
+                    <button class="menu__btn">
+                        <p class="menu__name">Côte de boeuf Angus</p>
+                            <div class="position">
+                                <p class="menu__detail">Et sa purée de panais</p>
+                                <p class="menu__price">44€</p>
+                            </div>
                     </button>
 
                 </div>
 
-                <div class="details-menu">
+                <div class="menu__details">
 
-                    <h3>PLATS</h3>
+                    <h5  class="menu__dish">DESSERTS</h5>
+                    <div class="menu__line"></div>
 
-                    <button>
-                        <p>Poulet rôti aux herbes de Provence</p>
-                        <p>Et sa crème de truffe</p>
-                      <p>40€</p>
+                    <button class="menu__btn">
+                        <p class="menu__name">Farandole de desserts</p>
+                            <div class="position">
+                                <p class="menu__detail">Du chef</p>
+                                <p class="menu__price">18€</p>
+                            </div>
                     </button>
 
-                    <button>
-                        <p>Langouste rôtie</p>
-                        <p>Et ses légumes de saison</p>
-                        <p>35€</p>
+                    <button class="menu__btn">
+                        <p class="menu__name">Crème brulée</p>
+                            <div class="position">
+                                <p class="menu__detail">Revisitée</p>
+                                <p class="menu__price">22€</p>
+                            </div>
                     </button>
 
-                    <button>
-                        <p>Côte de boeuf Angus</p>
-                        <p>Et sa purée de panais</p>
-                     <p>44€</p>
-                    </button>
-
-                </div>
-
-                <div class="details-menu">
-
-                    <h3>DESSERTS</h3>
-
-                    <button>
-                        <p>Farandole de desserts</p>
-                        <p>Du chef</p>
-                      <p>18€</p>
-                    </button>
-
-                    <button>
-                        <p>Crème brulée</p>
-                        <p>Revisitée</p>
-                        <p>22€</p>
-                    </button>
-
-                    <button>
-                        <p>Tiramisu</p>
-                        <p>À la noisette</p>
-                     <p>23€</p>
+                    <button class="menu__btn">
+                        <p class="menu__name">Tiramisu</p>
+                            <div class="position">
+                                <p class="menu__detail">À la noisette</p>
+                                <p class="menu__price">23€</p>
+                            </div>
                     </button>
                     
                 </div>
-            </div>
 
-            <div class="order-button">
-                <button>Commander</button>
-            </div>
+                <div class="order">
+                    <button class="order__btn">Commander</button>
+                </div>
+            </section>
+            
 
         </main>
 
@@ -131,5 +156,5 @@
         </footer>
 
     </body>
-    
+
 </html>
