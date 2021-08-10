@@ -31,6 +31,7 @@ body {
         margin: 10px;
         left: 15px;
         font-size: 20px;
+        color: #000000;
     }
 }
 
@@ -46,20 +47,27 @@ main {
 /* POSITION VILLE INDEX */
 
 .town-position__city {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #EAEAEA;
     border: none;
     color: #626262;
-    font-size: 16px;
-    font-weight: 700;
     width: 100%;
     height: 50px;
 
 
     .town-position__icon {       
         padding-right: 9px;
+        color: #626262;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .town-position__text {
+        font-weight: 700;
+        font-size: 15px;
     }
 }
 
@@ -83,18 +91,21 @@ main {
         margin-top: 12px;
         min-height: 44px;
         text-align: center;
+        font-weight: 300;
         width: 362px;
+        color: #575757;
     }
 
     .restaurants-exp__btn {
-        height: 58px;
+        cursor: pointer;
+        height: 50px;
         margin-top: 27px;
         min-width: 210px;
         padding: 17px 26px;
-        font-size: 14px;
-        font-weight: 700;
+        font-size: 16px;
+        font-weight: 500;
         background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
-        box-shadow: $box-shadow;
+        box-shadow: $box-shadow__btn;
         
     }
 }
@@ -122,6 +133,7 @@ main {
     }
 
     .functioning__btn {
+        cursor: pointer;
         display: flex;
         font-weight: bold;
         align-items: center;
@@ -129,14 +141,19 @@ main {
         width: 330px;
         background-color: $grey-color;
         border-radius: 25px;
-        box-shadow: $box-shadow;
-        border: none;    
+        box-shadow: $box-shadow__btn;
+        border: none;
+        
+        .btn--active {
+            background-color: #99e2d0;
+        }    
     }
-
+    
     .functioning__number {
         background-color: $primary-color;
         color: #FFF;
         font-size: 14px;
+        font-weight: 500;
         border-radius: 11.5px;
         display: flex;
         align-items: center;
@@ -146,20 +163,20 @@ main {
         padding: 3px 6px;
         left: 17px;
         position: absolute;
-
+        
     }
-
+    
     .functioning__icon {
         align-items: flex-start;
         display: flex;
-        margin-bottom: 1.0px;
-        margin-left: 26px;
+        margin-bottom: 3px;
+        margin-left: 35px;
         padding: 0 3px;
         width: 20px;
-        font-size: 16px;
+        font-size: 18px;
         justify-content: center;
     }
-
+    
     .functioning__text {
         letter-spacing: 0;
         margin-bottom: 1.0px;
@@ -167,7 +184,7 @@ main {
         margin: 0 20px 0 17px;
         min-height: 20px;
         min-width: 191px;
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 700;
     }   
 }
@@ -200,7 +217,7 @@ main {
     height: 250px;
     border-radius: 12px;
     background-color: white;
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow__card;
     cursor: pointer;
     }
 
@@ -227,7 +244,7 @@ main {
         top: 13px;
         right: 13px;
         font-size: 0.95em;
-        font-weight: 600;  
+        font-weight: 500;  
     }
 
     .restaurants__description {
@@ -245,21 +262,24 @@ main {
             
     .restaurants__text {
         width: 160px;
+        line-height: 1.5;
+        
+        .restaurants__name {
+            font-weight: 700;
+            font-size: 18px;
+        }
+    
+        .restaurants__region {
+            font-weight:300;
+            font-size: 17px;
+        }
     }
 
-    .restaurants__name {
-        font-weight: 700;
-        font-size: 17px;
-    }
-
-    .restaurants__region {
-        font-weight:400;
-        font-size: 17px;
-    }
 
     .restaurants__icon {
         width: 40px;
         font-size: 25px;
+        margin: 10px;
         justify-content: center;
         align-items: center;
     }
@@ -287,7 +307,7 @@ main {
 .menu__box {
     position: absolute;
     top: 320px;
-    background-color: #EAEAEA;
+    background-color: $grey-color;
     height: auto;
     width: auto;
     max-width: 690px;
@@ -307,6 +327,11 @@ main {
         padding: 20px 20px 0 20px;
     }
 
+    .menu__icon {
+        font-size: 25px;
+        margin-right: 20px;
+    }
+
 }
 
 .menu__details {
@@ -320,6 +345,7 @@ main {
         width: auto;
         font-size: 1em;
         font-weight: 400;
+        color: #575757;
         padding-bottom: 5px;
         text-align: left;
     }
@@ -341,9 +367,9 @@ main {
     border: none;
     background-color: #FFF;
     font-size: 14px;
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow__btn;
     margin-top: 15px;
-    padding: 0 15px 0 15px;
+    padding: 0 10px 0 10px;
 
     .menu__name {
         text-align: left;
@@ -358,12 +384,13 @@ main {
         .menu__detail {
             font-weight:400;
             font-size: 15px;
+            color: #575757;
+            line-height: 1.9;
        
         }
 
         .menu__price {
             font-weight: 700;
-            font-size: 17px;
         
         }
     }
@@ -375,14 +402,13 @@ main {
 
 
     .order__btn {
-        height: 58px;
-        background-size: 100% 100%;
+        height: 55px;
         margin-top: 40px;
         min-width: 210px;
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 500;
         background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
-        box-shadow: $box-shadow;
+        box-shadow: $box-shadow__btn;
     }
 }
 
@@ -392,36 +418,35 @@ main {
 
 footer {
     font-size: 0.938rem;
-    line-height: 1.7;
     bottom: 0.4rem;
     left: 1rem;
     text-align: left;
-    padding: 2rem;
+    padding: 1.6rem;
     background-color: $footer;
     color: #fff;
     width: 100%;
-    height: 200px;
+    line-height: 1.6;
 
     .footer__title {
-        padding-bottom: 14px;
+        padding-bottom: 20px;
     }
 
-    .footer__propose {
+    .footer__block {
         display: flex;
-    }
 
-    .footer__partner {
-        display: flex;
+        .footer__icon1 {
+            font-size: 14px;
+            margin-right: 13px;
+        }
+        
+        .footer__icon2 {
+            font-size: 12px;
+            margin-right: 9px;
+        }
     }
     
-    .footer__icon1 {
-        font-size: 13px;
-        padding-right: 13px;
-    }
-
-    .footer__icon2 {
-        font-size: 11px;
-        padding-right: 9px;
+    .footer-text__thin {
+        font-weight: 300;
     }
 
 }

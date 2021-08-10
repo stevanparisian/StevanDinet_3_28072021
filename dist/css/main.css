@@ -13,7 +13,7 @@
   height: 1539px;
 }
 
-.btn-gradiant {
+.btn-base {
   background-size: 100% 100%;
   border-radius: 25px;
   border: none;
@@ -43,18 +43,17 @@ h3 {
 h4 {
   font-family: "Shrikhand", "cursive";
   font-style: normal;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 400;
 }
 
 p {
-  font-size: 19px;
-  line-height: 1.3;
+  font-size: 16px;
 }
 
 a {
-  font-size: 19px;
-  line-height: 1.3;
+  font-size: 16px;
+  font-weight: 300;
   color: #FFF;
   text-decoration: none;
 }
@@ -84,6 +83,7 @@ body {
   margin: 10px;
   left: 15px;
   font-size: 20px;
+  color: #000000;
 }
 
 /* ---------PAGE INDEX----------- */
@@ -95,19 +95,25 @@ main {
 
 /* POSITION VILLE INDEX */
 .town-position__city {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #EAEAEA;
   border: none;
   color: #626262;
-  font-size: 16px;
-  font-weight: 700;
   width: 100%;
   height: 50px;
 }
 .town-position__city .town-position__icon {
   padding-right: 9px;
+  color: #626262;
+  font-size: 16px;
+  font-weight: 700;
+}
+.town-position__city .town-position__text {
+  font-weight: 700;
+  font-size: 15px;
 }
 
 /* EXPLORER RESTAURANTS INDEX */
@@ -128,17 +134,20 @@ main {
   margin-top: 12px;
   min-height: 44px;
   text-align: center;
+  font-weight: 300;
   width: 362px;
+  color: #575757;
 }
 .restaurants-exp .restaurants-exp__btn {
-  height: 58px;
+  cursor: pointer;
+  height: 50px;
   margin-top: 27px;
   min-width: 210px;
   padding: 17px 26px;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 9px;
 }
 
 /* FONCTIONNEMENT INDEX */
@@ -161,6 +170,7 @@ main {
   padding-right: 20px;
 }
 .functioning .functioning__btn {
+  cursor: pointer;
   display: flex;
   font-weight: bold;
   align-items: center;
@@ -168,13 +178,17 @@ main {
   width: 330px;
   background-color: #F6F6F6;
   border-radius: 25px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 9px;
   border: none;
+}
+.functioning .functioning__btn .btn--active {
+  background-color: #99e2d0;
 }
 .functioning .functioning__number {
   background-color: #9356DC;
   color: #FFF;
   font-size: 14px;
+  font-weight: 500;
   border-radius: 11.5px;
   display: flex;
   align-items: center;
@@ -188,11 +202,11 @@ main {
 .functioning .functioning__icon {
   align-items: flex-start;
   display: flex;
-  margin-bottom: 1px;
-  margin-left: 26px;
+  margin-bottom: 3px;
+  margin-left: 35px;
   padding: 0 3px;
   width: 20px;
-  font-size: 16px;
+  font-size: 18px;
   justify-content: center;
 }
 .functioning .functioning__text {
@@ -202,7 +216,7 @@ main {
   margin: 0 20px 0 17px;
   min-height: 20px;
   min-width: 191px;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -230,7 +244,7 @@ main {
   height: 250px;
   border-radius: 12px;
   background-color: white;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 9px;
   cursor: pointer;
 }
 .restaurants img {
@@ -255,7 +269,7 @@ main {
   top: 13px;
   right: 13px;
   font-size: 0.95em;
-  font-weight: 600;
+  font-weight: 500;
 }
 .restaurants .restaurants__description {
   display: flex;
@@ -271,18 +285,20 @@ main {
 }
 .restaurants .restaurants__text {
   width: 160px;
+  line-height: 1.5;
 }
-.restaurants .restaurants__name {
+.restaurants .restaurants__text .restaurants__name {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
 }
-.restaurants .restaurants__region {
-  font-weight: 400;
+.restaurants .restaurants__text .restaurants__region {
+  font-weight: 300;
   font-size: 17px;
 }
 .restaurants .restaurants__icon {
   width: 40px;
   font-size: 25px;
+  margin: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -302,7 +318,7 @@ main {
 .menu__box {
   position: absolute;
   top: 320px;
-  background-color: #EAEAEA;
+  background-color: #F6F6F6;
   height: auto;
   width: auto;
   max-width: 690px;
@@ -321,6 +337,10 @@ main {
   overflow: hidden;
   padding: 20px 20px 0 20px;
 }
+.menu__box .menu__icon {
+  font-size: 25px;
+  margin-right: 20px;
+}
 
 .menu__details {
   height: 100%;
@@ -332,6 +352,7 @@ main {
   width: auto;
   font-size: 1em;
   font-weight: 400;
+  color: #575757;
   padding-bottom: 5px;
   text-align: left;
 }
@@ -350,9 +371,9 @@ main {
   border: none;
   background-color: #FFF;
   font-size: 14px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 9px;
   margin-top: 15px;
-  padding: 0 15px 0 15px;
+  padding: 0 10px 0 10px;
 }
 .menu__btn .menu__name {
   text-align: left;
@@ -366,10 +387,11 @@ main {
 .menu__btn .position .menu__detail {
   font-weight: 400;
   font-size: 15px;
+  color: #575757;
+  line-height: 1.9;
 }
 .menu__btn .position .menu__price {
   font-weight: 700;
-  font-size: 17px;
 }
 
 /* BOUTTON MENU */
@@ -377,43 +399,41 @@ main {
   height: 180px;
 }
 .order .order__btn {
-  height: 58px;
-  background-size: 100% 100%;
+  height: 55px;
   margin-top: 40px;
   min-width: 210px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 9px;
 }
 
 /* FOOTER */
 footer {
   font-size: 0.938rem;
-  line-height: 1.7;
   bottom: 0.4rem;
   left: 1rem;
   text-align: left;
-  padding: 2rem;
+  padding: 1.6rem;
   background-color: #353535;
   color: #fff;
   width: 100%;
-  height: 200px;
+  line-height: 1.6;
 }
 footer .footer__title {
-  padding-bottom: 14px;
+  padding-bottom: 20px;
 }
-footer .footer__propose {
+footer .footer__block {
   display: flex;
 }
-footer .footer__partner {
-  display: flex;
+footer .footer__block .footer__icon1 {
+  font-size: 14px;
+  margin-right: 13px;
 }
-footer .footer__icon1 {
-  font-size: 13px;
-  padding-right: 13px;
+footer .footer__block .footer__icon2 {
+  font-size: 12px;
+  margin-right: 9px;
 }
-footer .footer__icon2 {
-  font-size: 11px;
-  padding-right: 9px;
+footer .footer-text__thin {
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */
