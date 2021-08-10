@@ -57,6 +57,11 @@ main {
     width: 100%;
     height: 50px;
 
+    &:hover {
+        border: solid 1px;
+        border-color: $primary-color;
+    }
+
 
     .town-position__icon {       
         padding-right: 9px;
@@ -106,8 +111,15 @@ main {
         font-weight: 500;
         background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
         box-shadow: $box-shadow__btn;
+        transition-duration: 0.4s;
+
+        &:hover {
+            filter: brightness(105%);
+            box-shadow:  rgba(17, 17, 26, 0.4) 0px 5px 9px;
+            
         
     }
+}
 }
 
 /* FONCTIONNEMENT INDEX */
@@ -143,10 +155,26 @@ main {
         border-radius: 25px;
         box-shadow: $box-shadow__btn;
         border: none;
+        transition-duration: 0.4s;
+
+        &:hover {
+            background-color: #e7d9f7;
+            box-shadow:  rgba(17, 17, 26, 0.4) 0px 5px 9px;
+        }
         
-        .btn--active {
-            background-color: #99e2d0;
-        }    
+    }
+    .functioning__btn--active {
+        cursor: pointer;
+        display: flex;
+        font-weight: bold;
+        align-items: center;
+        height: 75px;
+        width: 330px;
+        background-color: $grey-color;
+        border-radius: 25px;
+        box-shadow: $box-shadow__btn;
+        border: none;
+        background-color: #e7d9f7;
     }
     
     .functioning__number {
@@ -167,6 +195,17 @@ main {
     }
     
     .functioning__icon {
+        align-items: flex-start;
+        display: flex;
+        margin-bottom: 3px;
+        margin-left: 35px;
+        padding: 0 3px;
+        width: 20px;
+        font-size: 18px;
+        justify-content: center;
+    }
+    .functioning__icon--active {
+        color: $primary-color;
         align-items: flex-start;
         display: flex;
         margin-bottom: 3px;
@@ -250,14 +289,13 @@ main {
     .restaurants__description {
         display: flex;
         justify-content: space-between;
-        height: 75px;
         width: 100%;
         background-color: #FFF;
         border-radius: 0 0 20px 20px;
-        padding: 10px 0 10px 15px;
+        padding: 10px 10px 10px 15px;
         color: #000000;
         height: 75px;
-        width: 100%;
+
     }    
             
     .restaurants__text {
@@ -277,14 +315,32 @@ main {
 
 
     .restaurants__icon {
-        width: 40px;
-        font-size: 25px;
-        margin: 10px;
-        justify-content: center;
-        align-items: center;
+      padding: 40px;
+      cursor: pointer;
+
+        .restaurants__icon--empty {
+            position: absolute;
+            bottom: 25px;
+            font-size: 25px;
+
+        }
+
+        .restaurants__icon--full {
+            position: absolute;
+            bottom: 25px;
+            font-size: 25px;
+            color: transparent;
+            transition-duration: 0.2s;
+
+            &:hover {
+                color: $secondary-color;
+                transform: scale(1.05);
+            }
+        }
     }
-        
 }
+
+
 
 /* ------PAGE MENU------- */
 
@@ -327,9 +383,27 @@ main {
         padding: 20px 20px 0 20px;
     }
 
-    .menu__icon {
+    .menu__icon--empty {
+        position: absolute;
+        right: 10px;
         font-size: 25px;
         margin-right: 20px;
+    }
+
+    .menu__icon--full {
+        position: absolute;
+        cursor: pointer;
+        color: transparent;
+        right: 10px;
+        font-size: 25px;
+        margin-right: 20px;
+        transition-duration: 0.2s;
+
+        &:hover {
+        color: $secondary-color;
+                transform: scale(1.05);
+        }
+
     }
 
 }
@@ -409,7 +483,13 @@ main {
         font-weight: 500;
         background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
         box-shadow: $box-shadow__btn;
+        transition-duration: 0.4s;
+
+        &:hover {
+            filter: brightness(105%);
+            box-shadow:  rgba(17, 17, 26, 0.4) 0px 5px 9px;
     }
+}
 }
 
 
@@ -433,6 +513,7 @@ footer {
 
     .footer__block {
         display: flex;
+        cursor: pointer;
 
         .footer__icon1 {
             font-size: 14px;
@@ -443,10 +524,16 @@ footer {
             font-size: 12px;
             margin-right: 9px;
         }
+
     }
     
     .footer-text__thin {
         font-weight: 300;
+        cursor: pointer;
+    }
+
+    p:hover, a:hover {
+        text-decoration: underline;
     }
 
 }

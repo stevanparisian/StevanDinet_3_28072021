@@ -105,6 +105,10 @@ main {
   width: 100%;
   height: 50px;
 }
+.town-position__city:hover {
+  border: solid 1px;
+  border-color: #9356DC;
+}
 .town-position__city .town-position__icon {
   padding-right: 9px;
   color: #626262;
@@ -147,7 +151,12 @@ main {
   font-size: 16px;
   font-weight: 500;
   background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 9px;
+  box-shadow: rgba(17, 17, 26, 0.2) 0px 5px 9px;
+  transition-duration: 0.4s;
+}
+.restaurants-exp .restaurants-exp__btn:hover {
+  filter: brightness(105%);
+  box-shadow: rgba(17, 17, 26, 0.4) 0px 5px 9px;
 }
 
 /* FONCTIONNEMENT INDEX */
@@ -178,11 +187,26 @@ main {
   width: 330px;
   background-color: #F6F6F6;
   border-radius: 25px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 9px;
+  box-shadow: rgba(17, 17, 26, 0.2) 0px 5px 9px;
   border: none;
+  transition-duration: 0.4s;
 }
-.functioning .functioning__btn .btn--active {
-  background-color: #99e2d0;
+.functioning .functioning__btn:hover {
+  background-color: #e7d9f7;
+  box-shadow: rgba(17, 17, 26, 0.4) 0px 5px 9px;
+}
+.functioning .functioning__btn--active {
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  height: 75px;
+  width: 330px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  box-shadow: rgba(17, 17, 26, 0.2) 0px 5px 9px;
+  border: none;
+  background-color: #e7d9f7;
 }
 .functioning .functioning__number {
   background-color: #9356DC;
@@ -200,6 +224,17 @@ main {
   position: absolute;
 }
 .functioning .functioning__icon {
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 3px;
+  margin-left: 35px;
+  padding: 0 3px;
+  width: 20px;
+  font-size: 18px;
+  justify-content: center;
+}
+.functioning .functioning__icon--active {
+  color: #9356DC;
   align-items: flex-start;
   display: flex;
   margin-bottom: 3px;
@@ -274,14 +309,12 @@ main {
 .restaurants .restaurants__description {
   display: flex;
   justify-content: space-between;
-  height: 75px;
   width: 100%;
   background-color: #FFF;
   border-radius: 0 0 20px 20px;
-  padding: 10px 0 10px 15px;
+  padding: 10px 10px 10px 15px;
   color: #000000;
   height: 75px;
-  width: 100%;
 }
 .restaurants .restaurants__text {
   width: 160px;
@@ -296,11 +329,24 @@ main {
   font-size: 17px;
 }
 .restaurants .restaurants__icon {
-  width: 40px;
+  padding: 40px;
+  cursor: pointer;
+}
+.restaurants .restaurants__icon .restaurants__icon--empty {
+  position: absolute;
+  bottom: 25px;
   font-size: 25px;
-  margin: 10px;
-  justify-content: center;
-  align-items: center;
+}
+.restaurants .restaurants__icon .restaurants__icon--full {
+  position: absolute;
+  bottom: 25px;
+  font-size: 25px;
+  color: transparent;
+  transition-duration: 0.2s;
+}
+.restaurants .restaurants__icon .restaurants__icon--full:hover {
+  color: #FF79DA;
+  transform: scale(1.05);
 }
 
 /* ------PAGE MENU------- */
@@ -337,9 +383,24 @@ main {
   overflow: hidden;
   padding: 20px 20px 0 20px;
 }
-.menu__box .menu__icon {
+.menu__box .menu__icon--empty {
+  position: absolute;
+  right: 10px;
   font-size: 25px;
   margin-right: 20px;
+}
+.menu__box .menu__icon--full {
+  position: absolute;
+  cursor: pointer;
+  color: transparent;
+  right: 10px;
+  font-size: 25px;
+  margin-right: 20px;
+  transition-duration: 0.2s;
+}
+.menu__box .menu__icon--full:hover {
+  color: #FF79DA;
+  transform: scale(1.05);
 }
 
 .menu__details {
@@ -371,7 +432,7 @@ main {
   border: none;
   background-color: #FFF;
   font-size: 14px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 9px;
+  box-shadow: rgba(17, 17, 26, 0.2) 0px 5px 9px;
   margin-top: 15px;
   padding: 0 10px 0 10px;
 }
@@ -405,7 +466,12 @@ main {
   font-size: 16px;
   font-weight: 500;
   background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 9px;
+  box-shadow: rgba(17, 17, 26, 0.2) 0px 5px 9px;
+  transition-duration: 0.4s;
+}
+.order .order__btn:hover {
+  filter: brightness(105%);
+  box-shadow: rgba(17, 17, 26, 0.4) 0px 5px 9px;
 }
 
 /* FOOTER */
@@ -425,6 +491,7 @@ footer .footer__title {
 }
 footer .footer__block {
   display: flex;
+  cursor: pointer;
 }
 footer .footer__block .footer__icon1 {
   font-size: 14px;
@@ -436,4 +503,8 @@ footer .footer__block .footer__icon2 {
 }
 footer .footer-text__thin {
   font-weight: 300;
+  cursor: pointer;
+}
+footer p:hover, footer a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
