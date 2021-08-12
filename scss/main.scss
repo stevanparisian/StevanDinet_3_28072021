@@ -300,7 +300,7 @@ main {
             
     .restaurants__text {
         width: 160px;
-        line-height: 1.5;
+        line-height: 1.4;
         
         .restaurants__name {
             font-weight: 700;
@@ -530,6 +530,10 @@ footer {
     .footer-text__thin {
         font-weight: 300;
         cursor: pointer;
+    }
+
+    .footer-link {
+        color: #fff;
     }
 
     p:hover, a:hover {
