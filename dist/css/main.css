@@ -20,100 +20,113 @@
   color: #FFF;
 }
 
-.container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-}
-
-.loader {
-  display: block;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  width: 200px;
-  height: 200px;
-  margin: -100px 0 0 -100px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #9356DC;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-  z-index: 1001;
-}
-
-.loader:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #FF79DA;
-  -webkit-animation: spin 3s linear infinite;
-  animation: spin 3s linear infinite;
-}
-
-.loader:after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #99E2D0;
-  -webkit-animation: spin 1.5s linear infinite;
-  animation: spin 1.5s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
+/*.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
   }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.text {
-  font-family: Shrikhand;
-  font-size: 20px;
-  display: block;
-  position: relative;
-  left: 50%;
-  top: 48%;
-  width: 200px;
-  height: 200px;
-  margin: -100px 0 0 -100px;
-}
 
-body.accueil {
-  overflow: initial;
-  animation: noscroll 3s ease-out 1;
-}
+  .loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    border-radius: 50%;
 
+    border: 3px solid transparent;
+    border-top-color: #9356DC;
+
+    -webkit-animation: spin 2s linear infinite; 
+            animation: spin 2s linear infinite; 
+    z-index: 1001;
+  }
+
+  .loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+
+    border: 3px solid transparent;
+    border-top-color: #FF79DA;
+
+    -webkit-animation: spin 3s linear infinite; 
+            animation: spin 3s linear infinite; 
+  }
+
+  .loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+
+    border: 3px solid transparent;
+    border-top-color: #99E2D0;
+
+    -webkit-animation: spin 1.5s linear infinite; 
+            animation: spin 1.5s linear infinite; 
+  }
+
+  @-webkit-keyframes spin {
+    0%   { 
+      -webkit-transform: rotate(0deg); 
+        -ms-transform: rotate(0deg);  
+            transform: rotate(0deg);  
+
+    }
+    100% { 
+      -webkit-transform: rotate(360deg); 
+        -ms-transform: rotate(360deg); 
+            transform: rotate(360deg);  
+
+
+    }
+  }
+  @keyframes spin {
+    0%   { 
+      -webkit-transform: rotate(0deg);  
+        -ms-transform: rotate(0deg); 
+            transform: rotate(0deg);  
+
+    }
+    100% { 
+      -webkit-transform: rotate(360deg); 
+        -ms-transform: rotate(360deg);  
+            transform: rotate(360deg);  
+
+
+    }
+}  
+
+  .text {
+    font-family: Shrikhand;
+    font-size: 20px;
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 48%;
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+  }
+
+  body.accueil {
+    overflow: initial;
+    animation: noscroll 3s ease-out 1;
+}
+*/
 h1 {
   font-family: "Shrikhand", "cursive";
   font-size: 30px;
@@ -260,6 +273,8 @@ main {
   height: 441px;
   padding: 45px 12px;
   width: 100%;
+  max-width: 742px;
+  margin: 0 auto;
 }
 .functioning .functioning__title {
   margin-bottom: 15px;
@@ -308,9 +323,6 @@ main {
   font-size: 14px;
   font-weight: 500;
   border-radius: 11.5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 24px;
   min-width: 24px;
   padding: 3px 6px;
@@ -518,6 +530,7 @@ main {
 }
 
 .menu__btn {
+  overflow: hidden;
   background-size: 100% 100%;
   height: 65px;
   width: 100%;
@@ -528,25 +541,79 @@ main {
   font-size: 14px;
   box-shadow: rgba(17, 17, 26, 0.2) 0px 5px 9px;
   margin-top: 15px;
-  padding: 0 10px 0 10px;
+  animation: apparition 0.9s ease-out;
 }
-.menu__btn .menu__name {
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu__container {
+  cursor: pointer;
+  height: 65px;
+  width: 120%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  background-color: #F6F6F6;
+}
+
+.menu__descrition {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+.menu__descrition .menu__name {
   text-align: left;
   font-weight: 700;
   font-size: 17px;
 }
-.menu__btn .position {
-  display: flex;
-  justify-content: space-between;
-}
-.menu__btn .position .menu__detail {
+.menu__descrition .menu__detail {
   font-weight: 400;
   font-size: 15px;
   color: #575757;
   line-height: 1.9;
 }
-.menu__btn .position .menu__price {
+
+.menu__price {
   font-weight: 700;
+  height: 70px;
+  width: 72px;
+  min-width: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 10px;
+  font-size: 1em;
+}
+
+.menu__animation {
+  background-color: #99e2d0;
+  height: 70px;
+  width: 70px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #FFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /* BOUTTON MENU */
