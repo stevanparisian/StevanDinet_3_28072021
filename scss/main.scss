@@ -168,19 +168,7 @@ main {
         }
         
     }
-    .functioning__btn--active {
-        cursor: pointer;
-        display: flex;
-        font-weight: bold;
-        align-items: center;
-        height: 75px;
-        width: 330px;
-        background-color: $grey-color;
-        border-radius: 25px;
-        box-shadow: $box-shadow__btn;
-        border: none;
-        background-color: #e7d9f7;
-    }
+    
     
     .functioning__number {
         background-color: $primary-color;
@@ -365,7 +353,7 @@ main {
 .menu__box {
     position: absolute;
     top: 320px;
-    background-color: $grey-color;
+    background-color: #EAEAEA;
     height: auto;
     width: auto;
     max-width: 690px;
@@ -434,103 +422,114 @@ main {
 
 }
 
-.menu__btn {
-    
-    overflow: hidden;
-    background-size: 100% 100%;
-    height: 65px;
-    width: 100%;
-    min-width: 210px;
-    border-radius: 15px;
-    border: none;
-    background-color: #FFF;
-    font-size: 14px;
-    box-shadow: $box-shadow__btn;
-    margin-top: 15px;
+.menu__name {
+    flex-grow: 1; /*facteur expension*/
+    width: 5em;
+    padding: 10px;
 
-    animation: apparition 0.9s ease-out;
+  
+    p,
+    h3 {
+        font-family: roboto;
+        font-size: 15px;
+        text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis; /* affiche ellipse pour représenter texte rogner */
+      white-space: nowrap; /*passage a la ligne automatique supprimé*/
+    }
+  }
+  .menu__price {
+    width: 2.5em;
+    padding-top: 35px;
+    font-weight: bold;
+  }
+  .menu__checkbox {
+    display: flex;
+    width: 0;
+    height: 100%;
+    transition: all 1s;
+    background-color: $tertiary-color;
+  
+    .menu__check {
+      margin: auto;
+      border-radius: 50%;
+      .fa-check-circle {
+        color: white;
+        font-size: 1.3em;
+      }
+  
+      transition: transform 0.7s;
+      transform: rotate(360deg);
+    }
+  }
+  .menu:hover > .menu__checkbox {
+    width: 5em; /* définit la taille de l'apparition box */
+    .check {
+      transform: rotate(0deg);
+    }
+  }
+  
+  /*apparition des menu */
+  .menu {
+    display: flex;
     
-}
-
-@keyframes apparition {
+    height: 70px;
+    border-radius: 20px;
+   
+    overflow: hidden; /*cache  ce qui dépasse */
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: rgb(17 17 26 / 20%) 0px 5px 9px;
+  
+    &__delay {
+      animation: delayapparition 0.6s;
+      animation-timing-function: ease-in-out; /*déroulement animation*/
+      animation-fill-mode: both;
+    }
+  }
+  
+  @keyframes delayapparition {
     0% {
-        opacity: 0;
-        transform: translateY(15px);
+      opacity: 0;
+      transform: translate(100%, 0);
     }
-
-    50% {
-        opacity: 0.5;
-        transform: translateY(4px);
-    }
-
     100% {
-        opacity: 1;
-        transform: translateY(0px);
+      opacity: 1;
+      transform: translate(0, 0);
     }
-}
+  }
+  
+  .delay__0 {
+    animation-delay: 0s;
+  }
+  .delay__1 {
+    animation-delay: 0.4s;
+  }
+  .delay__2 {
+    animation-delay: 0.8s;
+  }
+  .delay__3 {
+    animation-delay: 1.2s;
+  }
+  .delay__4 {
+    animation-delay: 1.6s;
+  }
+  .delay__5 {
+    animation-delay: 2s;
+  }
+  .delay__6 {
+    animation-delay: 2.4s;
+  }
+  .delay__7 {
+    animation-delay: 2.6s;
+  }
+  .delay__8 {
+    animation-delay: 2.8s;
+  }
+  .delay__9 {
+    animation-delay: 3.2s;
+  }
 
-    .menu__container {
-        cursor: pointer;
-        height: 65px;
-        width: 120%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: hidden;
-        background-color: #F6F6F6;
-    }
-
-    
-    .menu__descrition {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding-left: 10px;
-        
-        .menu__name {
-            text-align: left;
-            font-weight: 700;
-            font-size: 17px;
-        }
-        .menu__detail {
-            font-weight:400;
-            font-size: 15px;
-            color: #575757;
-            line-height: 1.9;
-       
-        }
-
-    }
-
-    .menu__price {
-        font-weight: 700;
-        height: 70px;
-        width: 72px;
-        min-width: 70px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        padding-bottom: 10px;
-        font-size: 1em;
-    
-    }
-
-    .menu__animation {
-        background-color: #99e2d0;
-        height: 70px;
-        width: 70px;
-        font-weight: bold;
-        font-size: 1.5em;
-        color: #FFF;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
 
 
 
