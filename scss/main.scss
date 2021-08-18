@@ -40,11 +40,6 @@ body {
 
 /* MAIN INDEX */
 
-main {
-  height: 2004px;
-  width: 100%;
-}
-
 /* POSITION VILLE INDEX */
 
 .town-position__city {
@@ -66,8 +61,6 @@ main {
   .town-position__icon {
     padding-right: 9px;
     color: #626262;
-    font-size: 16px;
-    font-weight: 700;
   }
 
   .town-position__text {
@@ -103,7 +96,7 @@ main {
 
   .restaurants-exp__btn {
     cursor: pointer;
-    height: 50px;
+    height: 55px;
     margin-top: 27px;
     min-width: 210px;
     padding: 17px 26px;
@@ -132,7 +125,6 @@ main {
 
 .operation {
   text-align: left;
-  background-color: #fff;
   height: 441px;
   padding: 45px 12px;
   width: 100%;
@@ -155,7 +147,6 @@ main {
   .operation__btn {
     cursor: pointer;
     display: flex;
-    font-weight: bold;
     align-items: center;
     height: 75px;
     width: 330px;
@@ -209,13 +200,9 @@ main {
   }
 
   .operation__text {
-    letter-spacing: 0;
-    margin-bottom: 1px;
-    margin-left: 17px;
     margin: 0 20px 0 17px;
     min-height: 20px;
     min-width: 191px;
-    font-size: 16px;
     font-weight: 700;
   }
 }
@@ -230,11 +217,9 @@ main {
   max-width: 700px;
   text-align: left;
   margin: auto;
-  right: 0;
-  left: 0;
 
   .restaurants__title {
-    min-height: 54px;
+    height: 54px;
     width: 234px;
   }
 
@@ -285,10 +270,7 @@ main {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: #fff;
-    border-radius: 0 0 20px 20px;
     padding: 10px 10px 10px 15px;
-    color: #000000;
     height: 75px;
   }
 
