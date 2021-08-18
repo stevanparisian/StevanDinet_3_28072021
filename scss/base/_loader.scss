@@ -1,4 +1,4 @@
-.container {
+.loader__container {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,11 +8,10 @@
     pointer-events: none;
     background-color: #fff;
 
-    -webkit-animation: space_spin 3000ms ease-in-out both;
     animation: space_spin 3000ms ease-in-out both;
 }
   
-  .loader {
+  .loader__spinner {
     display: block;
     position: relative;
     left: 50%;
@@ -27,12 +26,11 @@
 
 
   
-    -webkit-animation: spin 2s linear infinite; 
             animation: spin 2s linear infinite; 
     
   }
   
-  .loader:before {
+  .loader__spinner:before {
     content: "";
     position: absolute;
     top: 5px;
@@ -44,11 +42,10 @@
     border: 3px solid transparent;
     border-top-color: #FF79DA;
   
-    -webkit-animation: spin 3s linear infinite; 
             animation: spin 3s linear infinite; 
   }
   
-  .loader:after {
+  .loader__spinner:after {
     content: "";
     position: absolute;
     top: 15px;
@@ -60,8 +57,8 @@
     border: 3px solid transparent;
     border-top-color: #99E2D0;
   
-    -webkit-animation: spin 1.5s linear infinite; 
-            animation: spin 1.5s linear infinite; 
+            animation: spin 1.5s linear infinite;
+            -webkit-animation: spin 1.5s linear infinite;
   }
 
   @-webkit-keyframes spin {
@@ -122,7 +119,7 @@
 }
 
   
-  .text {
+  .loader__text {
     font-family: Shrikhand;
     font-size: 20px;
     display: block;

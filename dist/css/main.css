@@ -14,14 +14,7 @@
   height: 1539px;
 }
 
-.btn-base {
-  background-size: 100% 100%;
-  border-radius: 25px;
-  border: none;
-  color: #FFF;
-}
-
-.container {
+.loader__container {
   position: fixed;
   top: 0;
   left: 0;
@@ -30,11 +23,10 @@
   z-index: 5;
   pointer-events: none;
   background-color: #fff;
-  -webkit-animation: space_spin 3000ms ease-in-out both;
   animation: space_spin 3000ms ease-in-out both;
 }
 
-.loader {
+.loader__spinner {
   display: block;
   position: relative;
   left: 50%;
@@ -45,11 +37,10 @@
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #9356DC;
-  -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
 
-.loader:before {
+.loader__spinner:before {
   content: "";
   position: absolute;
   top: 5px;
@@ -59,11 +50,10 @@
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #FF79DA;
-  -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
 
-.loader:after {
+.loader__spinner:after {
   content: "";
   position: absolute;
   top: 15px;
@@ -73,8 +63,8 @@
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #99E2D0;
-  -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
+  -webkit-animation: spin 1.5s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -125,7 +115,7 @@
     display: none;
   }
 }
-.text {
+.loader__text {
   font-family: Shrikhand;
   font-size: 20px;
   display: block;
@@ -216,7 +206,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   border: none;
   color: #626262;
   width: 100%;
@@ -270,6 +260,10 @@ main {
   background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
   box-shadow: rgba(17, 17, 26, 0.2) 0px 5px 9px;
   transition-duration: 0.4s;
+  background-size: 100% 100%;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
 }
 .restaurants-exp .restaurants-exp__btn:hover {
   filter: brightness(105%);
@@ -277,19 +271,19 @@ main {
 }
 
 /* FONCTIONNEMENT INDEX */
-.functioning {
+.operation {
   text-align: left;
-  background-color: #FFF;
+  background-color: #fff;
   height: 441px;
   padding: 45px 12px;
   width: 100%;
-  max-width: 742px;
+  max-width: 400px;
   margin: 0 auto;
 }
-.functioning .functioning__title {
+.operation .operation__title {
   margin-bottom: 15px;
 }
-.functioning .functioning__block {
+.operation .operation__block {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -297,7 +291,7 @@ main {
   padding-left: 32px;
   padding-right: 20px;
 }
-.functioning .functioning__btn {
+.operation .operation__btn {
   cursor: pointer;
   display: flex;
   font-weight: bold;
@@ -310,23 +304,24 @@ main {
   border: none;
   transition-duration: 0.4s;
 }
-.functioning .functioning__btn:hover {
+.operation .operation__btn:hover {
   background-color: #e7d9f7;
   box-shadow: rgba(17, 17, 26, 0.4) 0px 5px 9px;
 }
-.functioning .functioning__number {
+.operation .operation__number {
+  display: flex;
+  justify-content: center;
   background-color: #9356DC;
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   border-radius: 11.5px;
   height: 24px;
   min-width: 24px;
   padding: 3px 6px;
-  left: 17px;
-  position: absolute;
+  margin: -12px;
 }
-.functioning .functioning__icon {
+.operation .operation__icon {
   align-items: flex-start;
   display: flex;
   margin-bottom: 3px;
@@ -335,8 +330,9 @@ main {
   width: 20px;
   font-size: 18px;
   justify-content: center;
+  color: #9356DC;
 }
-.functioning .functioning__icon--active {
+.operation .operation__icon--active {
   color: #9356DC;
   align-items: flex-start;
   display: flex;
@@ -347,7 +343,7 @@ main {
   font-size: 18px;
   justify-content: center;
 }
-.functioning .functioning__text {
+.operation .operation__text {
   letter-spacing: 0;
   margin-bottom: 1px;
   margin-left: 17px;
@@ -364,7 +360,11 @@ main {
   height: 1226px;
   padding: 45px 12px;
   width: 100%;
+  max-width: 700px;
   text-align: left;
+  margin: auto;
+  right: 0;
+  left: 0;
 }
 .restaurants .restaurants__title {
   min-height: 54px;
@@ -393,7 +393,7 @@ main {
   width: 100%;
   border-radius: 12px 12px 0 0;
 }
-.restaurants .restauarants__new {
+.restaurants .restaurants__new {
   cursor: default;
   height: 30px;
   width: 80px;
@@ -413,7 +413,7 @@ main {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 0 0 20px 20px;
   padding: 10px 10px 10px 15px;
   color: #000000;
@@ -450,6 +450,7 @@ main {
 .restaurants .restaurants__icon .restaurants__icon--full:hover {
   color: #FF79DA;
   transform: scale(1.05);
+  -webkit-transform: scale(1.05);
 }
 
 /* ------PAGE MENU------- */
@@ -466,13 +467,15 @@ main {
 /* MENU */
 .menu__box {
   position: absolute;
-  top: 320px;
-  background-color: #EAEAEA;
+  top: 305px;
+  background-color: #f6f6f6;
   height: auto;
-  width: auto;
+  width: 100%;
   max-width: 690px;
-  margin: 0 auto;
-  border-radius: 45px 45px 0 0;
+  margin: auto;
+  right: 0;
+  left: 0;
+  border-radius: 30px 30px 0 0;
 }
 .menu__box .menu__title {
   height: 80px;
@@ -510,7 +513,7 @@ main {
   height: 100%;
   width: 100%;
   max-width: 690px;
-  padding: 30px 15px 20px 15px;
+  padding: 20px 15px 5px 15px;
 }
 .menu__details .menu__dish {
   width: auto;
@@ -529,13 +532,25 @@ main {
 .menu__name {
   flex-grow: 1;
   /*facteur expension*/
-  width: 5em;
+  width: 4em;
   padding: 10px;
 }
-.menu__name p,
-.menu__name h3 {
-  font-family: roboto;
-  font-size: 15px;
+.menu__name .menu__name__dish {
+  font-family: "roboto", "sans-serif";
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* affiche ellipse pour représenter texte rogner */
+  white-space: nowrap;
+  /*passage a la ligne automatique supprimé*/
+}
+.menu__name .menu__detail__dish {
+  font-family: "roboto", "sans-serif";
+  color: #575757;
+  font-size: 14px;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -546,7 +561,8 @@ main {
 
 .menu__price {
   width: 2.5em;
-  padding-top: 35px;
+  padding-top: 28px;
+  padding-right: 15px;
   font-weight: bold;
 }
 
@@ -579,8 +595,9 @@ main {
 /*apparition des menu */
 .menu {
   display: flex;
+  margin: 15px 0 15px 0;
   height: 70px;
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
   /*cache  ce qui dépasse */
   cursor: pointer;
@@ -588,7 +605,7 @@ main {
   box-shadow: rgba(17, 17, 26, 0.2) 0px 5px 9px;
 }
 .menu__delay {
-  animation: delayapparition 0.6s;
+  animation: delayapparition 0.7s;
   animation-timing-function: ease-in-out;
   /*déroulement animation*/
   animation-fill-mode: both;
@@ -597,11 +614,11 @@ main {
 @keyframes delayapparition {
   0% {
     opacity: 0;
-    transform: translate(100%, 0);
+    transform: translateY(100%);
   }
   100% {
     opacity: 1;
-    transform: translate(0, 0);
+    transform: translateY(0);
   }
 }
 .delay__0 {
@@ -633,15 +650,15 @@ main {
 }
 
 .delay__7 {
-  animation-delay: 2.6s;
-}
-
-.delay__8 {
   animation-delay: 2.8s;
 }
 
-.delay__9 {
+.delay__8 {
   animation-delay: 3.2s;
+}
+
+.delay__9 {
+  animation-delay: 3.6s;
 }
 
 /* BOUTTON MENU */
@@ -649,6 +666,7 @@ main {
   height: 180px;
 }
 .order .order__btn {
+  cursor: pointer;
   height: 55px;
   margin-top: 40px;
   min-width: 210px;
@@ -657,6 +675,10 @@ main {
   background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
   box-shadow: rgba(17, 17, 26, 0.2) 0px 5px 9px;
   transition-duration: 0.4s;
+  background-size: 100% 100%;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
 }
 .order .order__btn:hover {
   filter: brightness(105%);
@@ -697,6 +719,7 @@ footer .footer-text__thin {
 footer .footer-link {
   color: #fff;
 }
-footer p:hover, footer a:hover {
+footer p:hover,
+footer a:hover {
   text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
