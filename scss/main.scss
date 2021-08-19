@@ -22,12 +22,12 @@ body {
   height: 63px;
   box-shadow: $box-shadow;
 
-  .header__menu {
+  &__menu {
     display: flex;
     justify-content: center;
   }
 
-  .header__icon {
+  &__icon {
     position: absolute;
     margin: 10px;
     left: 15px;
@@ -42,7 +42,7 @@ body {
 
 /* POSITION VILLE INDEX */
 
-.town-position__city {
+.town-position {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -58,12 +58,12 @@ body {
     border-color: $primary-color;
   }
 
-  .town-position__icon {
+  &__icon {
     padding-right: 9px;
     color: #626262;
   }
 
-  .town-position__text {
+  &__text {
     font-weight: 700;
     font-size: 15px;
   }
@@ -72,20 +72,20 @@ body {
 /* EXPLORER RESTAURANTS INDEX */
 
 .restaurants-exp {
-  background-color: $grey-color;
+  background-color: $grey-background;
   display: flex;
   flex-direction: column;
   height: 287px;
   padding: 38px 5px;
   width: 100%;
 
-  .restaurants-exp__title {
+  &__title {
     min-height: 54px;
     text-align: center;
     width: 234px;
   }
 
-  .restaurants-exp__text {
+  &__text {
     margin-top: 12px;
     min-height: 44px;
     text-align: center;
@@ -94,7 +94,7 @@ body {
     color: #575757;
   }
 
-  .restaurants-exp__btn {
+  &__btn {
     cursor: pointer;
     height: 55px;
     margin-top: 27px;
@@ -102,11 +102,7 @@ body {
     padding: 17px 26px;
     font-size: 16px;
     font-weight: 500;
-    background: linear-gradient(
-      135deg,
-      $secondary-color 0%,
-      $primary-color 100%
-    );
+    background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
     box-shadow: $box-shadow__btn;
     transition-duration: 0.4s;
     background-size: 100% 100%;
@@ -131,11 +127,11 @@ body {
   max-width: 400px;
   margin: 0 auto;
 
-  .operation__title {
+  &__title {
     margin-bottom: 15px;
   }
 
-  .operation__block {
+  &__block {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -144,13 +140,13 @@ body {
     padding-right: 20px;
   }
 
-  .operation__btn {
+  &__btn {
     cursor: pointer;
     display: flex;
     align-items: center;
     height: 75px;
     width: 330px;
-    background-color: $grey-color;
+    background-color: $grey-background;
     border-radius: 25px;
     box-shadow: $box-shadow__btn;
     border: none;
@@ -162,7 +158,7 @@ body {
     }
   }
 
-  .operation__number {
+  &__number {
     display: flex;
     justify-content: center;
     background-color: $primary-color;
@@ -176,7 +172,7 @@ body {
     margin: -12px;
   }
 
-  .operation__icon {
+  &__icon {
     align-items: flex-start;
     display: flex;
     margin-bottom: 3px;
@@ -186,20 +182,9 @@ body {
     font-size: 18px;
     justify-content: center;
     color: $primary-color;
-  }
-  .operation__icon--active {
-    color: $primary-color;
-    align-items: flex-start;
-    display: flex;
-    margin-bottom: 3px;
-    margin-left: 35px;
-    padding: 0 3px;
-    width: 20px;
-    font-size: 18px;
-    justify-content: center;
   }
 
-  .operation__text {
+  &__text {
     margin: 0 20px 0 17px;
     min-height: 20px;
     min-width: 191px;
@@ -210,7 +195,7 @@ body {
 /* RESTAURANTS INDEX */
 
 .restaurants {
-  background-color: $grey-color;
+  background-color: $grey-background;
   height: 1226px;
   padding: 45px 12px;
   width: 100%;
@@ -218,19 +203,19 @@ body {
   text-align: left;
   margin: auto;
 
-  .restaurants__title {
+  &__title {
     height: 54px;
     width: 234px;
   }
 
-  .restaurants__block {
+  &__block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 1060px;
   }
 
-  .restaurants__card {
+  &__card {
     position: relative;
     width: 100%;
     height: 250px;
@@ -249,7 +234,7 @@ body {
     border-radius: 12px 12px 0 0;
   }
 
-  .restaurants__new {
+  &__new {
     cursor: default;
     height: 30px;
     width: 80px;
@@ -266,7 +251,7 @@ body {
     font-weight: 500;
   }
 
-  .restaurants__description {
+  &__description {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -274,32 +259,34 @@ body {
     height: 75px;
   }
 
-  .restaurants__text {
+  &__text {
     width: 160px;
     line-height: 1.4;
-
-    .restaurants__name {
-      font-weight: 700;
-      font-size: 18px;
-    }
-
-    .restaurants__region {
-      font-weight: 300;
-      font-size: 17px;
-    }
   }
 
-  .restaurants__icon {
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__region {
+    font-weight: 300;
+    font-size: 17px;
+  }
+  
+
+  &__icon {
     padding: 40px;
     cursor: pointer;
+  }
 
-    .restaurants__icon--empty {
+    &__icon--empty {
       position: absolute;
       bottom: 25px;
       font-size: 25px;
     }
 
-    .restaurants__icon--full {
+    &__icon--full {
       position: absolute;
       bottom: 25px;
       font-size: 25px;
@@ -313,16 +300,15 @@ body {
       }
     }
   }
-}
 
 /* ------PAGE MENU------- */
 
 /* MAIN MENU */
 
-.main__menu {
+.main-menu {
   width: 100%;
 
-  .main__img {
+  &__img {
     height: 300px;
     width: 100%;
     object-fit: cover;
@@ -331,10 +317,10 @@ body {
 
 /* MENU */
 
-.menu__box {
+.menu {
   position: absolute;
   top: 305px;
-  background-color: #f6f6f6;
+  background-color: $grey-background;
   height: auto;
   width: 100%;
   max-width: 690px;
@@ -343,7 +329,7 @@ body {
   left: 0;
   border-radius: 30px 30px 0 0;
 
-  .menu__title {
+  &__title {
     height: 80px;
     width: 100%;
     max-width: 690px;
@@ -356,14 +342,14 @@ body {
     padding: 20px 20px 0 20px;
   }
 
-  .menu__icon--empty {
+  &__icon--empty {
     position: absolute;
     right: 10px;
     font-size: 25px;
     margin-right: 20px;
   }
 
-  .menu__icon--full {
+  &__icon--full {
     position: absolute;
     cursor: pointer;
     color: transparent;
@@ -377,15 +363,15 @@ body {
       transform: scale(1.05);
     }
   }
-}
 
-.menu__details {
+&__grid {
   height: 100%;
   width: 100%;
   max-width: 690px;
   padding: 20px 15px 5px 15px;
+}
 
-  .menu__dish {
+  &__grid-title {
     width: auto;
     font-size: 1em;
     font-weight: 400;
@@ -394,73 +380,16 @@ body {
     text-align: left;
   }
 
-  .menu__line {
+  &__grid-line {
     background-color: #99e2d0;
     height: 3px;
     width: 40px;
   }
 }
 
-.menu__name {
-  flex-grow: 1; /*facteur expension*/
-  width: 4em;
-  padding: 10px;
-
-  .menu__name__dish {
-    font-family: "roboto", "sans-serif";
-    font-size: 17px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
-    text-align: left;
-    overflow: hidden;
-    text-overflow: ellipsis; /* affiche ellipse pour représenter texte rogner */
-    white-space: nowrap; /*passage a la ligne automatique supprimé*/
-  }
-
-  .menu__detail__dish {
-    font-family: "roboto", "sans-serif";
-    color: #575757;
-    font-size: 14px;
-    text-align: left;
-    overflow: hidden;
-    text-overflow: ellipsis; /* affiche ellipse pour représenter texte rogner */
-    white-space: nowrap; /*passage a la ligne automatique supprimé*/
-  }
-}
-.menu__price {
-  width: 2.5em;
-  padding-top: 28px;
-  padding-right: 15px;
-  font-weight: bold;
-}
-.menu__checkbox {
-  display: flex;
-  width: 0;
-  height: 100%;
-  transition: all 1s;
-  background-color: $tertiary-color;
-
-  .menu__check {
-    margin: auto;
-    border-radius: 50%;
-    .fa-check-circle {
-      color: white;
-      font-size: 1.3em;
-    }
-
-    transition: transform 0.7s;
-    transform: rotate(360deg);
-  }
-}
-.menu:hover > .menu__checkbox {
-  width: 5em; /* définit la taille de l'apparition box */
-  .check {
-    transform: rotate(0deg);
-  }
-}
 
 /*apparition des menu */
-.menu {
+.menu__item {
   display: flex;
   margin: 15px 0 15px 0;
   height: 70px;
@@ -481,7 +410,7 @@ body {
 @keyframes delayapparition {
   0% {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(50%);
   }
   100% {
     opacity: 1;
@@ -493,49 +422,104 @@ body {
   animation-delay: 0s;
 }
 .delay__1 {
-  animation-delay: 0.4s;
+  animation-delay: 0s;
 }
 .delay__2 {
-  animation-delay: 0.8s;
+  animation-delay: 0s;
 }
 .delay__3 {
-  animation-delay: 1.2s;
+  animation-delay: 0.5s;
 }
 .delay__4 {
-  animation-delay: 1.6s;
+  animation-delay: 0.5s;
 }
 .delay__5 {
-  animation-delay: 2s;
+  animation-delay: 0.5s;
 }
 .delay__6 {
-  animation-delay: 2.4s;
+  animation-delay: 1s;
 }
 .delay__7 {
-  animation-delay: 2.8s;
+  animation-delay: 1s;
 }
 .delay__8 {
-  animation-delay: 3.2s;
+  animation-delay: 1s;
 }
 .delay__9 {
-  animation-delay: 3.6s;
+  animation-delay: 1s;
+}
+
+.menu__name {
+  flex-grow: 1; /*facteur expension*/
+  width: 4em;
+  padding: 10px;
+
+  .menu__name-dish {
+    font-family: "roboto", "sans-serif";
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis; /* affiche ellipse pour représenter texte rogner */
+    white-space: nowrap; /*passage a la ligne automatique supprimé*/
+  }
+
+  .menu__name-detail {
+    font-family: "roboto", "sans-serif";
+    color: #575757;
+    font-size: 14px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis; /* affiche ellipse pour représenter texte rogner */
+    white-space: nowrap; /*passage a la ligne automatique supprimé*/
+  }
+}
+
+.menu__price {
+  width: 2.5em;
+  padding-top: 28px;
+  padding-right: 15px;
+  font-weight: bold;
+}
+.menu__checkbox {
+  display: flex;
+  width: 0;
+  height: 100%;
+  transition: all 0.5s;
+  background-color: $tertiary-color;
+
+  .menu__check {
+    margin: auto;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    transform: rotate(-540deg);
+    
+    .fa-check-circle {
+      color: white;
+      font-size: 1.3em;
+    }
+  }
+}
+.menu__item:hover > .menu__checkbox {
+  width: 5em; /* définit la taille de l'apparition box */
+  .menu__check {
+    transform: rotate(0deg);
+  }
 }
 
 /* BOUTTON MENU */
 .order {
   height: 180px;
 
-  .order__btn {
+  &__btn {
     cursor: pointer;
     height: 55px;
     margin-top: 40px;
     min-width: 210px;
     font-size: 16px;
     font-weight: 500;
-    background: linear-gradient(
-      135deg,
-      $secondary-color 0%,
-      $primary-color 100%
-    );
+    background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
     box-shadow: $box-shadow__btn;
     transition-duration: 0.4s;
     background-size: 100% 100%;
@@ -552,7 +536,7 @@ body {
 
 /* FOOTER */
 
-footer {
+.footer {
   font-size: 0.938rem;
   bottom: 0.4rem;
   left: 1rem;
@@ -563,31 +547,32 @@ footer {
   width: 100%;
   line-height: 1.6;
 
-  .footer__title {
+  &__title {
     padding-bottom: 20px;
   }
 
-  .footer__block {
+  &__block {
     display: flex;
     cursor: pointer;
-
-    .footer__icon1 {
-      font-size: 14px;
-      margin-right: 13px;
-    }
-
-    .footer__icon2 {
-      font-size: 12px;
-      margin-right: 9px;
-    }
   }
 
-  .footer-text__thin {
+  &__icon1 {
+    font-size: 14px;
+    margin-right: 13px;
+  }
+
+  &__icon2 {
+    font-size: 12px;
+    margin-right: 9px;
+  }
+  
+
+  &__text-thin {
     font-weight: 300;
     cursor: pointer;
   }
 
-  .footer-link {
+  &__link {
     color: #fff;
   }
 
