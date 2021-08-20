@@ -181,6 +181,12 @@ body {
   height: 63px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
 }
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .header {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
 .header__menu {
   display: flex;
   justify-content: center;
@@ -194,7 +200,6 @@ body {
 }
 
 /* ---------PAGE INDEX----------- */
-/* MAIN INDEX */
 /* POSITION VILLE INDEX */
 .town-position {
   cursor: pointer;
@@ -206,6 +211,12 @@ body {
   color: #626262;
   width: 100%;
   height: 50px;
+}
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .town-position {
+    width: 1400px;
+    margin: 0 auto;
+  }
 }
 .town-position:hover {
   border: solid 1px;
@@ -228,6 +239,12 @@ body {
   height: 287px;
   padding: 38px 5px;
   width: 100%;
+}
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .restaurants-exp {
+    width: 1400px;
+    margin: 0 auto;
+  }
 }
 .restaurants-exp__title {
   min-height: 54px;
@@ -269,8 +286,13 @@ body {
   height: 441px;
   padding: 45px 12px;
   width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+}
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .operation {
+    width: 1400px;
+    margin: 0 auto;
+    height: 250px;
+  }
 }
 .operation__title {
   margin-bottom: 15px;
@@ -282,6 +304,13 @@ body {
   height: 300px;
   padding-left: 32px;
   padding-right: 20px;
+}
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .operation__block {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+  }
 }
 .operation__btn {
   cursor: pointer;
@@ -336,9 +365,14 @@ body {
   height: 1226px;
   padding: 45px 12px;
   width: 100%;
-  max-width: 700px;
   text-align: left;
-  margin: auto;
+}
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .restaurants {
+    width: 1400px;
+    margin: 0 auto;
+    height: 770px;
+  }
 }
 .restaurants__title {
   height: 54px;
@@ -350,6 +384,15 @@ body {
   justify-content: space-between;
   height: 1060px;
 }
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .restaurants__block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 600px;
+    margin: 0 auto;
+  }
+}
 .restaurants__card {
   position: relative;
   width: 100%;
@@ -358,6 +401,11 @@ body {
   background-color: white;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 9px;
   cursor: pointer;
+}
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .restaurants__card {
+    width: 600px;
+  }
 }
 .restaurants img {
   display: block;
@@ -667,8 +715,23 @@ body {
   width: 100%;
   line-height: 1.6;
 }
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .footer {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+  }
+}
 .footer__title {
   padding-bottom: 20px;
+}
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .footer__title {
+    padding: 0;
+  }
 }
 .footer__block {
   display: flex;
