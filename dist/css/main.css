@@ -415,6 +415,11 @@ body {
   width: 100%;
   border-radius: 12px 12px 0 0;
 }
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .restaurants img {
+    object-position: 0px -150px;
+  }
+}
 .restaurants__new {
   cursor: default;
   height: 30px;
@@ -477,10 +482,21 @@ body {
 .main-menu {
   width: 100%;
 }
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .main-menu {
+    height: 870px;
+  }
+}
 .main-menu__img {
   height: 300px;
   width: 100%;
   object-fit: cover;
+}
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .main-menu__img {
+    width: 1400px;
+    margin: 0 auto;
+  }
 }
 
 /* MENU */
@@ -490,17 +506,19 @@ body {
   background-color: #F6F6F6;
   height: auto;
   width: 100%;
-  max-width: 690px;
-  margin: auto;
   right: 0;
   left: 0;
   border-radius: 30px 30px 0 0;
 }
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .menu {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
 .menu__title {
   height: 80px;
   width: 100%;
-  max-width: 690px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -527,10 +545,16 @@ body {
   color: #FF79DA;
   transform: scale(1.05);
 }
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .menu__box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+}
 .menu__grid {
   height: 100%;
   width: 100%;
-  max-width: 690px;
   padding: 20px 15px 5px 15px;
 }
 .menu__grid-title {

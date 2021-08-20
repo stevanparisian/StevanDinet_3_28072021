@@ -273,6 +273,10 @@ body {
     height: 175px;
     width: 100%;
     border-radius: 12px 12px 0 0;
+
+    @include deskstop {
+      object-position: 0px -150px;
+      }
   }
 
   &__new {
@@ -348,11 +352,21 @@ body {
 
 .main-menu {
   width: 100%;
+  
+  @include deskstop {
+    height: 870px;
+  }
+
 
   &__img {
     height: 300px;
     width: 100%;
     object-fit: cover;
+
+    @include deskstop {
+      width: 1400px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -364,17 +378,19 @@ body {
   background-color: $grey-background;
   height: auto;
   width: 100%;
-  max-width: 690px;
-  margin: auto;
   right: 0;
   left: 0;
   border-radius: 30px 30px 0 0;
 
+  @include deskstop {
+    width: 1400px;
+    margin: 0 auto;
+  }
+  
+
   &__title {
     height: 80px;
     width: 100%;
-    max-width: 690px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -405,10 +421,17 @@ body {
     }
   }
 
+  &__box {
+    @include deskstop {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    }
+  }
+
 &__grid {
   height: 100%;
   width: 100%;
-  max-width: 690px;
   padding: 20px 15px 5px 15px;
 }
 
