@@ -6,7 +6,7 @@
 @import "./utils/mixins";
 
 body {
-  height: 100vh;
+  height: 100%;
   font-family: "roboto", "sans-serif";
   line-height: 1;
   text-align: center;
@@ -352,13 +352,8 @@ body {
 
 .main-menu {
   width: 100%;
-  
-  @include deskstop {
-    height: 870px;
-  }
 
-
-  &__img {
+   &__img {
     height: 300px;
     width: 100%;
     object-fit: cover;
@@ -425,6 +420,7 @@ body {
     @include deskstop {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     margin-bottom: 50px;
     }
   }
@@ -492,7 +488,7 @@ body {
   animation-delay: 0s;
 }
 .delay__3 {
-  animation-delay: 0.5s;
+  animation-delay: 0s;
 }
 .delay__4 {
   animation-delay: 0.5s;
@@ -501,7 +497,7 @@ body {
   animation-delay: 0.5s;
 }
 .delay__6 {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 .delay__7 {
   animation-delay: 1s;

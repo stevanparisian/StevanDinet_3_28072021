@@ -9,9 +9,19 @@
 .nbdishes-9 {
   height: 1459px;
 }
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .nbdishes-9 {
+    height: 870px;
+  }
+}
 
 .nbdishes-10 {
   height: 1539px;
+}
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .nbdishes-10 {
+    height: 950px;
+  }
 }
 
 .loader__container {
@@ -121,7 +131,7 @@
   display: block;
   position: relative;
   left: 50%;
-  top: 48%;
+  top: 49%;
   width: 200px;
   height: 200px;
   margin: -100px 0 0 -100px;
@@ -166,7 +176,7 @@ a {
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   font-family: "roboto", "sans-serif";
   line-height: 1;
   text-align: center;
@@ -482,11 +492,6 @@ body {
 .main-menu {
   width: 100%;
 }
-@media (min-width: 1024px) and (max-width: 2560px) {
-  .main-menu {
-    height: 870px;
-  }
-}
 .main-menu__img {
   height: 300px;
   width: 100%;
@@ -549,6 +554,7 @@ body {
   .menu__box {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     margin-bottom: 50px;
   }
 }
@@ -613,7 +619,7 @@ body {
 }
 
 .delay__3 {
-  animation-delay: 0.5s;
+  animation-delay: 0s;
 }
 
 .delay__4 {
@@ -625,7 +631,7 @@ body {
 }
 
 .delay__6 {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .delay__7 {
