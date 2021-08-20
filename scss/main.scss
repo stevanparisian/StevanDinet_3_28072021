@@ -22,6 +22,11 @@ body {
   height: 63px;
   box-shadow: $box-shadow;
 
+  @include deskstop {
+    width: 1400px;
+    margin: 0 auto;
+  }
+
   &__menu {
     display: flex;
     justify-content: center;
@@ -38,8 +43,6 @@ body {
 
 /* ---------PAGE INDEX----------- */
 
-/* MAIN INDEX */
-
 /* POSITION VILLE INDEX */
 
 .town-position {
@@ -52,6 +55,11 @@ body {
   color: #626262;
   width: 100%;
   height: 50px;
+
+  @include deskstop {
+    width: 1400px;
+    margin: 0 auto;
+  }
 
   &:hover {
     border: solid 1px;
@@ -78,6 +86,11 @@ body {
   height: 287px;
   padding: 38px 5px;
   width: 100%;
+  
+  @include deskstop {
+    width: 1400px;
+    margin: 0 auto;
+  }
 
   &__title {
     min-height: 54px;
@@ -124,8 +137,13 @@ body {
   height: 441px;
   padding: 45px 12px;
   width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+  
+
+  @include deskstop {
+    width: 1400px;
+    margin: 0 auto;
+    height: 250px;
+  }
 
   &__title {
     margin-bottom: 15px;
@@ -138,6 +156,12 @@ body {
     height: 300px;
     padding-left: 32px;
     padding-right: 20px;
+
+    @include deskstop {
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   &__btn {
@@ -199,9 +223,13 @@ body {
   height: 1226px;
   padding: 45px 12px;
   width: 100%;
-  max-width: 700px;
   text-align: left;
-  margin: auto;
+
+  @include deskstop {
+    width: 1400px;
+    margin: 0 auto;
+    height: 770px;
+  }
 
   &__title {
     height: 54px;
@@ -213,6 +241,15 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 1060px;
+
+    @include deskstop {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 600px;
+      margin: 0 auto;
+      
+    }
   }
 
   &__card {
@@ -223,6 +260,10 @@ body {
     background-color: white;
     box-shadow: $box-shadow__card;
     cursor: pointer;
+
+    @include deskstop {
+    width: 600px;
+    }
   }
 
   img {
@@ -547,8 +588,21 @@ body {
   width: 100%;
   line-height: 1.6;
 
+  @include deskstop {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+  }
+
   &__title {
     padding-bottom: 20px;
+
+    @include deskstop {
+      padding: 0;
+    }
   }
 
   &__block {
