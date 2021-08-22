@@ -126,7 +126,6 @@
   }
 }
 .loader__text {
-  font-family: Shrikhand;
   font-size: 20px;
   display: block;
   position: relative;
@@ -466,7 +465,7 @@ body {
   font-size: 17px;
 }
 .restaurants__icon {
-  padding: 40px;
+  padding: 30px;
   cursor: pointer;
 }
 .restaurants__icon--empty {
@@ -478,13 +477,14 @@ body {
   position: absolute;
   bottom: 25px;
   font-size: 25px;
+  background: linear-gradient(0deg, #ff79DA 0%, #9356DC 90%);
+  -webkit-background-clip: text;
   color: transparent;
-  transition-duration: 0.2s;
+  opacity: 0;
 }
 .restaurants__icon--full:hover {
-  color: #FF79DA;
+  opacity: 1;
   transform: scale(1.05);
-  -webkit-transform: scale(1.05);
 }
 
 /* ------PAGE MENU------- */
@@ -544,10 +544,13 @@ body {
   right: 10px;
   font-size: 25px;
   margin-right: 20px;
-  transition-duration: 0.2s;
+  background: linear-gradient(0deg, #ff79DA 0%, #9356DC 90%);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
 }
 .menu__icon--full:hover {
-  color: #FF79DA;
+  opacity: 1;
   transform: scale(1.05);
 }
 @media (min-width: 1024px) and (max-width: 2560px) {

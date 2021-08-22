@@ -321,7 +321,7 @@ body {
   
 
   &__icon {
-    padding: 40px;
+    padding: 30px;
     cursor: pointer;
   }
 
@@ -335,13 +335,15 @@ body {
       position: absolute;
       bottom: 25px;
       font-size: 25px;
+      background: linear-gradient(0deg, #ff79DA 0%, #9356DC 90%);
+      -webkit-background-clip: text;
       color: transparent;
-      transition-duration: 0.2s;
+      opacity: 0;
+      
 
       &:hover {
-        color: $secondary-color;
+        opacity: 1;
         transform: scale(1.05);
-        -webkit-transform: scale(1.05);
       }
     }
   }
@@ -408,10 +410,13 @@ body {
     right: 10px;
     font-size: 25px;
     margin-right: 20px;
-    transition-duration: 0.2s;
+    background: linear-gradient(0deg, #ff79DA 0%, #9356DC 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
 
     &:hover {
-      color: $secondary-color;
+      opacity: 1;
       transform: scale(1.05);
     }
   }
