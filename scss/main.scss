@@ -1,45 +1,13 @@
 @import "./base/base";
-@import "./base/loader";
 @import "./base/typography";
-
+@import "./components/loader";
+@import "./components/listanim";
+@import "./components/hearts";
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./layout/header";
+@import "./layout/footer";
 
-body {
-  height: 100%;
-  font-family: "roboto", "sans-serif";
-  line-height: 1;
-  text-align: center;
-  min-width: 375px;
-}
-
-/* HEADER */
-
-.header {
-  position: relative;
-  width: 100%;
-  padding-top: 1.5rem;
-  height: 63px;
-  box-shadow: $box-shadow;
-
-  @include deskstop {
-    width: 1400px;
-    margin: 0 auto;
-  }
-
-  &__menu {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__icon {
-    position: absolute;
-    margin: 10px;
-    left: 15px;
-    font-size: 20px;
-    color: #000000;
-  }
-}
 
 /* ---------PAGE INDEX----------- */
 
@@ -80,7 +48,7 @@ body {
 /* EXPLORER RESTAURANTS INDEX */
 
 .restaurants-exp {
-  background-color: $grey-background;
+  background-color: $background-color ;
   display: flex;
   flex-direction: column;
   height: 287px;
@@ -115,8 +83,8 @@ body {
     padding: 17px 26px;
     font-size: 16px;
     font-weight: 500;
-    background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
-    box-shadow: $box-shadow__btn;
+    background: $gradient;
+    box-shadow: $box-shadow;
     transition-duration: 0.4s;
     background-size: 100% 100%;
     border-radius: 25px;
@@ -170,9 +138,9 @@ body {
     align-items: center;
     height: 75px;
     width: 330px;
-    background-color: $grey-background;
+    background-color: $background-color ;
     border-radius: 25px;
-    box-shadow: $box-shadow__btn;
+    box-shadow: $box-shadow;
     border: none;
     transition-duration: 0.4s;
 
@@ -219,7 +187,7 @@ body {
 /* RESTAURANTS INDEX */
 
 .restaurants {
-  background-color: $grey-background;
+  background-color: $background-color ;
   height: 1226px;
   padding: 45px 12px;
   width: 100%;
@@ -258,7 +226,7 @@ body {
     height: 250px;
     border-radius: 12px;
     background-color: white;
-    box-shadow: $box-shadow__card;
+    box-shadow: $box-shadow;
     cursor: pointer;
 
     @include deskstop {
@@ -318,34 +286,6 @@ body {
     font-weight: 300;
     font-size: 17px;
   }
-  
-
-  &__icon {
-    padding: 30px;
-    cursor: pointer;
-  }
-
-    &__icon--empty {
-      position: absolute;
-      bottom: 25px;
-      font-size: 25px;
-    }
-
-    &__icon--full {
-      position: absolute;
-      bottom: 25px;
-      font-size: 25px;
-      background: linear-gradient(0deg, #ff79DA 0%, #9356DC 90%);
-      -webkit-background-clip: text;
-      color: transparent;
-      opacity: 0;
-      
-
-      &:hover {
-        opacity: 1;
-        transform: scale(1.05);
-      }
-    }
   }
 
 /* ------PAGE MENU------- */
@@ -372,7 +312,7 @@ body {
 .menu {
   position: absolute;
   top: 305px;
-  background-color: $grey-background;
+  background-color: $background-color ;
   height: auto;
   width: 100%;
   right: 0;
@@ -394,31 +334,6 @@ body {
     border-radius: 25px 25px 0 0;
     overflow: hidden;
     padding: 20px 20px 0 20px;
-  }
-
-  &__icon--empty {
-    position: absolute;
-    right: 10px;
-    font-size: 25px;
-    margin-right: 20px;
-  }
-
-  &__icon--full {
-    position: absolute;
-    cursor: pointer;
-    color: transparent;
-    right: 10px;
-    font-size: 25px;
-    margin-right: 20px;
-    background: linear-gradient(0deg, #ff79DA 0%, #9356DC 90%);
-    -webkit-background-clip: text;
-    color: transparent;
-    opacity: 0;
-
-    &:hover {
-      opacity: 1;
-      transform: scale(1.05);
-    }
   }
 
   &__box {
@@ -450,68 +365,6 @@ body {
     height: 3px;
     width: 40px;
   }
-}
-
-
-/*apparition des menu */
-.menu__item {
-  display: flex;
-  margin: 15px 0 15px 0;
-  height: 70px;
-  border-radius: 15px;
-
-  overflow: hidden; /*cache  ce qui dépasse */
-  cursor: pointer;
-  background-color: #fff;
-  box-shadow: rgb(17 17 26 / 20%) 0px 5px 9px;
-
-  &__delay {
-    animation: delayapparition 0.7s;
-    animation-timing-function: ease-in-out; /*déroulement animation*/
-    animation-fill-mode: both;
-  }
-}
-
-@keyframes delayapparition {
-  0% {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.delay__0 {
-  animation-delay: 0s;
-}
-.delay__1 {
-  animation-delay: 0s;
-}
-.delay__2 {
-  animation-delay: 0s;
-}
-.delay__3 {
-  animation-delay: 0s;
-}
-.delay__4 {
-  animation-delay: 0.5s;
-}
-.delay__5 {
-  animation-delay: 0.5s;
-}
-.delay__6 {
-  animation-delay: 0.5s;
-}
-.delay__7 {
-  animation-delay: 1s;
-}
-.delay__8 {
-  animation-delay: 1s;
-}
-.delay__9 {
-  animation-delay: 1s;
 }
 
 .menu__name {
@@ -547,31 +400,6 @@ body {
   padding-right: 15px;
   font-weight: bold;
 }
-.menu__checkbox {
-  display: flex;
-  width: 0;
-  height: 100%;
-  transition: all 0.5s;
-  background-color: $tertiary-color;
-
-  .menu__check {
-    margin: auto;
-    border-radius: 50%;
-    transition: transform 0.5s;
-    transform: rotate(-540deg);
-    
-    .fa-check-circle {
-      color: white;
-      font-size: 1.3em;
-    }
-  }
-}
-.menu__item:hover > .menu__checkbox {
-  width: 5em; /* définit la taille de l'apparition box */
-  .menu__check {
-    transform: rotate(0deg);
-  }
-}
 
 /* BOUTTON MENU */
 .order {
@@ -584,8 +412,8 @@ body {
     min-width: 210px;
     font-size: 16px;
     font-weight: 500;
-    background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
-    box-shadow: $box-shadow__btn;
+    background: $gradient;
+    box-shadow: $box-shadow;
     transition-duration: 0.4s;
     background-size: 100% 100%;
     border-radius: 25px;
@@ -596,66 +424,5 @@ body {
       filter: brightness(105%);
       box-shadow: rgba(17, 17, 26, 0.4) 0px 5px 9px;
     }
-  }
-}
-
-/* FOOTER */
-
-.footer {
-  font-size: 0.938rem;
-  bottom: 0.4rem;
-  left: 1rem;
-  text-align: left;
-  padding: 1.6rem;
-  background-color: $footer;
-  color: #fff;
-  width: 100%;
-  line-height: 1.6;
-
-  @include deskstop {
-    width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem;
-  }
-
-  &__title {
-    padding-bottom: 20px;
-
-    @include deskstop {
-      padding: 0;
-    }
-  }
-
-  &__block {
-    display: flex;
-    cursor: pointer;
-  }
-
-  &__icon1 {
-    font-size: 14px;
-    margin-right: 13px;
-  }
-
-  &__icon2 {
-    font-size: 12px;
-    margin-right: 9px;
-  }
-  
-
-  &__text-thin {
-    font-weight: 300;
-    cursor: pointer;
-  }
-
-  &__link {
-    color: #fff;
-  }
-
-  p:hover,
-  a:hover {
-    text-decoration: underline;
   }
 }

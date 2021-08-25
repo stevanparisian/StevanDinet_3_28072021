@@ -1,0 +1,91 @@
+@import "../utils/variables";
+
+/* apparition des menu */
+
+.menu__item {
+    display: flex;
+    margin: 15px 0 15px 0;
+    height: 70px;
+    border-radius: 15px;
+  
+    overflow: hidden; /* cache  ce qui dépasse */
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: rgb(17 17 26 / 20%) 0px 5px 9px;
+  
+    &__delay {
+      animation: delayapparition 0.7s;
+      animation-timing-function: ease-in-out; /* déroulement animation */
+      animation-fill-mode: both;
+    }
+  }
+  
+  @keyframes delayapparition {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .delay__0 {
+    animation-delay: 0s;
+  }
+  .delay__1 {
+    animation-delay: 0s;
+  }
+  .delay__2 {
+    animation-delay: 0s;
+  }
+  .delay__3 {
+    animation-delay: 0s;
+  }
+  .delay__4 {
+    animation-delay: 0.5s;
+  }
+  .delay__5 {
+    animation-delay: 0.5s;
+  }
+  .delay__6 {
+    animation-delay: 0.5s;
+  }
+  .delay__7 {
+    animation-delay: 1s;
+  }
+  .delay__8 {
+    animation-delay: 1s;
+  }
+  .delay__9 {
+    animation-delay: 1s;
+  }
+
+/* apparition checkbox */
+
+  .menu__checkbox {
+    display: flex;
+    width: 0;
+    height: 100%;
+    transition: all 0.5s;
+    background-color: $tertiary-color;
+  
+    .menu__check {
+      margin: auto;
+      border-radius: 50%;
+      transition: transform 0.5s;
+      transform: rotate(-540deg);
+      
+      .fa-check-circle {
+        color: white;
+        font-size: 1.3em;
+      }
+    }
+  }
+  .menu__item:hover > .menu__checkbox {
+    width: 5em; /* définit la taille du checkbox */
+    .menu__check {
+      transform: rotate(0deg);
+    }
+  }

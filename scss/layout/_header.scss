@@ -1,0 +1,25 @@
+.header {
+    position: relative;
+    width: 100%;
+    padding-top: 1.5rem;
+    height: 63px;
+    box-shadow: $box-shadow-header;
+  
+    @include deskstop {
+      width: 1400px;
+      margin: 0 auto;
+    }
+  
+    &__menu {
+      display: flex;
+      justify-content: center;
+    }
+  
+    &__icon {
+      position: absolute;
+      margin: 10px;
+      left: 15px;
+      font-size: 20px;
+      color: #000000;
+    }
+  }

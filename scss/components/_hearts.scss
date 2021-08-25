@@ -1,0 +1,56 @@
+/* coeur index */
+
+.restaurants__icon {
+    padding: 30px;
+    cursor: pointer;
+  
+
+    .restaurants__icon--empty {
+      position: absolute;
+      bottom: 25px;
+      font-size: 25px;
+    }
+
+    .restaurants__icon--full {
+      position: absolute;
+      bottom: 25px;
+      font-size: 25px;
+      background: $gradient;
+      -webkit-background-clip: text;
+      color: transparent;
+      opacity: 0;
+      
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+}
+
+/* coeur menu */
+
+.menu__icon--empty {
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    margin-right: 20px;
+  }
+
+  .menu__icon--full {
+    position: absolute;
+    cursor: pointer;
+    color: transparent;
+    right: 10px;
+    font-size: 25px;
+    margin-right: 20px;
+    background: $gradient;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
