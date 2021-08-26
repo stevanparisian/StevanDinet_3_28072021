@@ -3,6 +3,7 @@
 @import "./components/loader";
 @import "./components/listanim";
 @import "./components/hearts";
+@import "./components/buttons";
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./layout/header";
@@ -17,7 +18,6 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #eaeaea;
   border: none;
   color: #626262;
@@ -62,39 +62,15 @@
 
   &__title {
     min-height: 54px;
-    text-align: center;
     width: 234px;
   }
 
   &__text {
     margin-top: 12px;
     min-height: 44px;
-    text-align: center;
     font-weight: 300;
     width: 362px;
     color: #575757;
-  }
-
-  &__btn {
-    cursor: pointer;
-    height: 55px;
-    margin-top: 27px;
-    min-width: 210px;
-    padding: 17px 26px;
-    font-size: 16px;
-    font-weight: 500;
-    background: $gradient;
-    box-shadow: $box-shadow;
-    transition-duration: 0.4s;
-    background-size: 100% 100%;
-    border-radius: 25px;
-    border: none;
-    color: #fff;
-
-    &:hover {
-      filter: brightness(105%);
-      box-shadow: rgba(17, 17, 26, 0.4) 0px 5px 9px;
-    }
   }
 }
 
@@ -135,7 +111,6 @@
   &__btn {
     cursor: pointer;
     display: flex;
-    align-items: center;
     height: 75px;
     width: 330px;
     background-color: $background-color ;
@@ -256,7 +231,6 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
     border-radius: 3px;
     top: 13px;
     right: 13px;
@@ -330,7 +304,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     border-radius: 25px 25px 0 0;
     overflow: hidden;
     padding: 20px 20px 0 20px;
@@ -365,14 +338,15 @@
     height: 3px;
     width: 40px;
   }
-}
 
-.menu__name {
+
+&__name {
   flex-grow: 1; /*facteur expension*/
   width: 4em;
   padding: 10px;
+}
 
-  .menu__name-dish {
+  &__name-dish {
     font-family: "roboto", "sans-serif";
     font-size: 17px;
     font-weight: 700;
@@ -383,7 +357,7 @@
     white-space: nowrap; /*passage a la ligne automatique supprimé*/
   }
 
-  .menu__name-detail {
+  &__name-detail {
     font-family: "roboto", "sans-serif";
     color: #575757;
     font-size: 14px;
@@ -392,14 +366,15 @@
     text-overflow: ellipsis; /* affiche ellipse pour représenter texte rogner */
     white-space: nowrap; /*passage a la ligne automatique supprimé*/
   }
+  
+  &__price {
+    width: 2.5em;
+    padding-top: 28px;
+    padding-right: 15px;
+    font-weight: bold;
+  }
 }
 
-.menu__price {
-  width: 2.5em;
-  padding-top: 28px;
-  padding-right: 15px;
-  font-weight: bold;
-}
 
 /* BOUTTON MENU */
 .order {
